@@ -9,16 +9,14 @@ import scipy
 
 d = 3
 n = 5
-t = [0.5,0.5,0.5]
+t = [0.5, 0.5, 0.5]
 mu = [0, 0, 0]
-sigma = [[1,0,0],[0,1,0],[0,0,1]]
+sigma = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
 
 "ESTIMATES"
 
-# print('Crude = ',multiNormalCrude(10000, t, mu, sigma))
-# print('AT = ',multiNormalAT(10000, t, mu, sigma))
-# print('pV = ', pV(10000, d, n, t, mu, sigma))
-# print('pV AT =', pVAT(10000, d, n, t, mu, sigma))
+print('Crude = ',multiNormalCrude(10000, t, mu, sigma))
+print('AT = ',multiNormalAT(10000, t, mu, sigma))
+print('pV = ', pV(10000, d, n, t, mu, sigma))
+print('pV AT =', pVAT(10000, d, n, t, mu, sigma))
 
-print(scipy.stats.multivariate_normal.pdf(0.3306023, mu, sigma))
-#print(scipy.stats.norm.cdf(0,0,1))

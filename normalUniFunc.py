@@ -171,3 +171,21 @@ def elipsoid(x, set):
     np.dot(y, y) <= 1
 
     return np.dot(y,y)<=1
+
+# Orthant
+def orthant(x, set):
+    if set == 1:
+        return all(x <= 0)
+    elif set == 2:
+        return all(x <= 1)
+    else:
+        return all(x <= -1)
+
+# Rectangular
+def rectangular(x, set):
+    if set == 1:
+        return all((-1 < x) & (x < 1))
+    elif set == 2:
+        return all((0 < x) & (x < 2))
+    else:
+        return all((0.5 < x) & (x < 1.5))

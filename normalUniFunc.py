@@ -98,8 +98,6 @@ def pV(M,d,n,t,mu,sigma):
 
 
 # pV with athitetic variates
-
-
 def pVAT(M,d,n,t,mu,sigma):
     k = []
     mu = np.transpose(np.matrix(mu))
@@ -130,3 +128,46 @@ def pVAT(M,d,n,t,mu,sigma):
         k.append(winPositive)
         k.append(winNegative)
     return sum(k)/(2*M*n)
+
+"Covariance matrices"
+
+# in each, insert n & rho, receive sigma
+# n - dimension, rho - value
+
+# one factor
+def oneFactor(n, rho):
+    matrix = np.empty((n,n))
+    for i in range(0,n):
+        for j in range(0,n):
+            if i == j:
+                matrix[i, j] = 1
+            else:
+                matrix[i, j] = rho
+    return (matrix)
+
+
+# AR
+def covAR(n, rho):
+    matrix = np.empty((n,n))
+    for i in range(0,n):
+        for j in range(0,n):
+            matrix[i, j] = rho ** math.fabs(i - j)
+    return (matrix)
+
+"Regions"
+
+# Elipsoid
+def elipsoid(x, set):
+    if set == 1:
+        b = np.array([1])
+        b = np.append(b, np.repeat(0, len(x)-1))
+    elif set == 2:
+        b = np.array([0.5])
+        b = np.append(b, np.repeat(0, len(x)-1))
+    else:
+        b = np.repeat(1, len(x))
+
+    y = x - b
+    np.dot(y, y) <= 1
+
+    return np.dot(y,y)<=1

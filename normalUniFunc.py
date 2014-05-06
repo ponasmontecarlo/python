@@ -3,20 +3,21 @@ import scipy, math
 from scipy.stats import chi
 
 
-#multivariate crude estimate
-def multiNormalCrude(n, t, mu, sigma):
+# multivariate crude estimate
+
+def multiNormalCrude(n, mu, sigma, region, set):
     r = np.random.multivariate_normal(mu, sigma, n)
     d = 0
     for x in r:
-        if all(x<t):
+        if region(x, set):
             d += 1
     return d/n
 
 
 # multivariate AT estimator
-def multiNormalAT(n, t, mu, sigma):
+def multiNormalAT(n, mu, sigma, region, set):
     mu = np.array(mu)
-    d = len(t) # dimensija pagal kuria kuriam vidurkius ir kovariacija
+    d = len(mu) # dimensija pagal kuria kuriam vidurkius ir kovariacija
 
     zeros = np.zeros(d)
     identity = np.identity(d)
@@ -31,11 +32,11 @@ def multiNormalAT(n, t, mu, sigma):
     dPositive = 0
     dNegative = 0
     for x in xPositive:
-        if all(x<t):
+        if region(x, set):
             dPositive += 1
 
     for x in xNegative:
-        if all(x<t):
+        if region(x, set):
             dNegative += 1
 
     return (dPositive+dNegative)/(2*n)
@@ -69,39 +70,34 @@ def radius(d, n):
 
 
 # z values
-def pV(M,d,n,t,mu,sigma):
+def pV(M, d, n, mu, sigma, region, set):
     k = []
     mu = np.transpose(np.matrix(mu))
-    t = np.transpose(np.matrix(t))
     for i in range(0,M):
         r = radius(d, n)
         T = orthoT(d)
         v = unitVectors(d, n)
 
-        zPositive = []
-        #zNegative = []
+        z = []
         for j in range(0,n):
             c = r[j]*np.dot(T, v[j])
-            zPositive.append(c)
-            #zNegative.append(-c)
+            z.append(c)
 
         gamma = np.linalg.cholesky(sigma)
-        xPositive = [mu + np.dot(gamma, np.transpose(elem)) for elem in zPositive]
-        #xNegative = [mu + np.dot(gamma,elem) for elem in zNegative]
+        x = [mu + np.dot(gamma, np.transpose(elem)) for elem in z]
 
         win = 0
         for l in range(0,n):
-            if all(xPositive[l] < t):
+            if region(np.array(x[l]).reshape(-1,).tolist(), set):
                 win += 1
         k.append(win)
     return sum(k)/(M*n)
 
 
 # pV with athitetic variates
-def pVAT(M,d,n,t,mu,sigma):
+def pVAT(M, d, n, mu, sigma, region, set):
     k = []
     mu = np.transpose(np.matrix(mu))
-    t = np.transpose(np.matrix(t))
     for i in range(0,M):
         r = radius(d, n)
         T = orthoT(d)
@@ -121,9 +117,9 @@ def pVAT(M,d,n,t,mu,sigma):
         winPositive = 0
         winNegative = 0
         for l in range(0,n):
-            if all(xPositive[l] < t):
+            if region(np.array(xPositive[l]).reshape(-1,).tolist(), set):
                 winPositive += 1
-            if all(xNegative[l] < t):
+            if region(np.array(xNegative[l]).reshape(-1,).tolist(), set):
                 winNegative += 1
         k.append(winPositive)
         k.append(winNegative)
@@ -156,6 +152,7 @@ def covAR(n, rho):
 
 "Regions"
 
+
 # Elipsoid
 def elipsoid(x, set):
     if set == 1:
@@ -172,6 +169,7 @@ def elipsoid(x, set):
 
     return np.dot(y,y)<=1
 
+
 # Orthant
 def orthant(x, set):
     if set == 1:
@@ -180,6 +178,7 @@ def orthant(x, set):
         return all(x <= 1)
     else:
         return all(x <= -1)
+
 
 # Rectangular
 def rectangular(x, set):

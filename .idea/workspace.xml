@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68c6cc06-25a1-4d0d-ac51-097643de2fb6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functions.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simulations.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MCintegration.iml" afterPath="$PROJECT_DIR$/.idea/MCintegration.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/working.py" afterPath="$PROJECT_DIR$/working.py" />
+    <list default="true" id="68c6cc06-25a1-4d0d-ac51-097643de2fb6" name="Default" comment="new scripts">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MCintegration.iws" />
@@ -42,7 +37,7 @@
       <file leaf-file-name="simulations.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/simulations.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="18" selection-start="220" selection-end="220" vertical-scroll-proportion="0.19354838" vertical-offset="0" max-vertical-offset="930">
+            <state line="12" column="18" selection-start="220" selection-end="220" vertical-scroll-proportion="0.29268292" vertical-offset="0" max-vertical-offset="810">
               <folding>
                 <element signature="e#33#122#0" expanded="true" />
               </folding>
@@ -106,6 +101,7 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="SYNC_SETTING" value="DONT" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -416,14 +412,19 @@
       <created>1399322156888</created>
       <updated>1399322156888</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="new scripts">
+      <created>1399474565927</created>
+      <updated>1399474565927</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="24" width="1871" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.328125" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32721713" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1096108" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -437,7 +438,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -480,7 +480,8 @@
     <MESSAGE value="testing" />
     <MESSAGE value="cov matrices &amp; elipsoid" />
     <MESSAGE value="added orthant &amp; rectangular regions" />
-    <option name="LAST_COMMIT_MESSAGE" value="added orthant &amp; rectangular regions" />
+    <MESSAGE value="new scripts" />
+    <option name="LAST_COMMIT_MESSAGE" value="new scripts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1010,7 +1011,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/simulations.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="18" selection-start="220" selection-end="220" vertical-scroll-proportion="0.19354838" vertical-offset="0" max-vertical-offset="930">
+        <state line="12" column="18" selection-start="220" selection-end="220" vertical-scroll-proportion="0.29268292" vertical-offset="0" max-vertical-offset="810">
           <folding>
             <element signature="e#33#122#0" expanded="true" />
           </folding>

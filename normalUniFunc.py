@@ -88,7 +88,7 @@ def pV(M, d, n, mu, sigma, region, set):
 
         win = 0
         for l in range(0,n):
-            if region(np.array(x[l]).reshape(-1,).tolist(), set):
+            if region(np.array(np.array(x[l]).reshape(-1,).tolist()), set):
                 win += 1
         k.append(win)
     return sum(k)/(M*n)
@@ -183,8 +183,8 @@ def orthant(x, set):
 # Rectangular
 def rectangular(x, set):
     if set == 1:
-        return all((-1 < x) & (x < 1))
+        return all(-1 < np.array(x)) & all(np.array(x) < 1)
     elif set == 2:
-        return all((0 < x) & (x < 2))
+        return all(0 < np.array(x)) & all(np.array(x) < 2)
     else:
-        return all((0.5 < x) & (x < 1.5))
+        return all(0.5 < np.array(x)) & all(np.array(x) < 1.5)

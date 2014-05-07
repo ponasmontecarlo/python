@@ -182,18 +182,18 @@ def elipsoid(x, set):
 # Orthant
 def orthant(x, set):
     if set == 1:
-        return all(x <= 0)
+        return all(np.array(x) <= 0)
     elif set == 2:
-        return all(x <= 1)
+        return all(np.array(x) <= 1)
     else:
-        return all(x <= -1)
+        return all(np.array(x) <= -1)
 
 
 # Rectangular
 def rectangular(x, set):
     if set == 1:
-        return all((-1 < x) & (x < 1))
+        return all(-1 < np.array(x)) & all(np.array(x) < 1)
     elif set == 2:
-        return all((0 < x) & (x < 2))
+        return all(0 < np.array(x)) & all(np.array(x) < 2)
     else:
-        return all((0.5 < x) & (x < 1.5))
+        return all(0.5 < np.array(x)) & all(np.array(x) < 1.5)

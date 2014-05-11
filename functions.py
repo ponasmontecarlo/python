@@ -1,4 +1,5 @@
 import numpy as np, scipy, math, itertools
+import pandas as pd
 from scipy.stats import chi
 
 
@@ -6,6 +7,7 @@ from scipy.stats import chi
 
 
 # multivariate crude estimate
+# if nu = 0, then simple normal estimate
 def Crude(M, d, n, mu, sigma, region, regionNumber, nu, omega):
     r = np.random.multivariate_normal(mu, sigma, M)
     d = 0
@@ -22,7 +24,8 @@ def Crude(M, d, n, mu, sigma, region, regionNumber, nu, omega):
 
 # multivariate antithetic variates estimate
 # M - number of runs
-def antithetic(M, d, n, mu, sigma, region, regionNumber):
+# if nu = 0, then simple normal estimate
+def antithetic(M, d, n, mu, sigma, region, regionNumber, nu, omega):
     mu = np.array(mu)
     d = len(mu) # dimensija pagal kuria kuriam vidurkius ir kovariacija
 
@@ -38,14 +41,24 @@ def antithetic(M, d, n, mu, sigma, region, regionNumber):
 
     dPositive = 0
     dNegative = 0
-    for x in xPositive:
-        if region(x, regionNumber):
-            dPositive += 1
 
-    for x in xNegative:
-        if region(x, regionNumber):
-            dNegative += 1
+    if nu == 0:
+        for x in xPositive:
+            if region(x, regionNumber):
+                dPositive += 1
 
+        for x in xNegative:
+            if region(x, regionNumber):
+                dNegative += 1
+
+    else:
+        for x in xPositive:
+            if region((math.sqrt(nu)/omega)*x, regionNumber):
+                dPositive += 1
+
+        for x in xNegative:
+            if region((math.sqrt(nu)/omega)*x, regionNumber):
+                dNegative += 1
     return (dPositive+dNegative)/(2*M)
 
 
@@ -81,13 +94,13 @@ def radius(d, n):
 
 
 # pV estimate
-def pV(M, d, n, mu, sigma, region, regionNumber):
+def pV(M, d, n, mu, sigma, region, regionNumber, nu, omega):
     k = []
     mu = np.transpose(np.matrix(mu))
     for i in range(0, M):
         r = radius(d, n)
         T = orthoT(d)
-        v = unitVectors(d, n)
+        v = unitV(d)
 
         z = []
         [z.append(r[j]*np.dot(T, v[j])) for j in range(n)]
@@ -97,20 +110,20 @@ def pV(M, d, n, mu, sigma, region, regionNumber):
 
         win = 0
         for l in range(0,n):
-            if region(np.array(x[l]).reshape(-1,).tolist(), regionNumber):
+            if region((math.sqrt(nu)/omega)*(np.array(x[l]).reshape(-1,).tolist()), regionNumber):
                 win += 1
         k.append(win)
     return sum(k)/(M*n)
 
 
 # pV w/ antithetic variates
-def pVantithetic(M, d, n, mu, sigma, region, regionNumber):
+def pVantithetic(M, d, n, mu, sigma, region, regionNumber, nu, omega):
     k = []
     mu = np.transpose(np.matrix(mu))
     for i in range(0,M):
         r = radius(d, n)
         T = orthoT(d)
-        v = unitVectors(d, n)
+        v = unitV(d)
 
         zPositive = []
         zNegative = []
@@ -126,9 +139,9 @@ def pVantithetic(M, d, n, mu, sigma, region, regionNumber):
         winPositive = 0
         winNegative = 0
         for l in range(0,n):
-            if region(np.array(xPositive[l]).reshape(-1,).tolist(), regionNumber):
+            if region((math.sqrt(nu)/omega)*(np.array(xPositive[l]).reshape(-1,).tolist()), regionNumber):
                 winPositive += 1
-            if region(np.array(xNegative[l]).reshape(-1,).tolist(), regionNumber):
+            if region((math.sqrt(nu)/omega)*(np.array(xNegative[l]).reshape(-1,).tolist()), regionNumber):
                 winNegative += 1
         k.append(winPositive)
         k.append(winNegative)
@@ -235,3 +248,9 @@ def studentProb(upperOmegaBound, nOmegas, nu, M, estimate, d, n, mu, sigma, regi
 
     multiplier = (2 ** (1 - (nu/2)))/(math.gamma(nu/2))
     return multiplier*approx
+
+# reads and returns true unit vectors
+def unitV(d):
+    file = 'C:/Users/Adomas/Dropbox/Bakalaurinis/vektoriai/vector'+str(d)+'.csv'
+    vectors = pd.read_csv(file, sep=" ", header=None)
+    return vectors.as_matrix()

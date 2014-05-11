@@ -13,14 +13,14 @@ upperOmegaBound = 10
 nOmegas = 200
 nu = 5
 M = 50
-d = 3
+d = 4
 n = 5
 rho = 0.1
-mu = [0, 0, 0]
-sigma = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
+mu = [0, 0, 0, 0]
+sigma = [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]
 estimate = pV
 region = orthant
-regionNumber = 3
+regionNumber = 1
 #####################
 
 # import pandas as pd
@@ -32,6 +32,6 @@ regionNumber = 3
 # print(np.mean(a))
 
 tic = time.clock()
-print(studentProb(upperOmegaBound, nOmegas, nu, M, estimate, d, n, mu, sigma, region, regionNumber))
+print(studentProb(upperOmegaBound, nOmegas, nu, M, estimate, d, mu, sigma, region, regionNumber))
 toc = time.clock()
 print('Elapsed time = ', (toc - tic), 'seconds')

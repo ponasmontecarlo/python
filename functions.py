@@ -8,7 +8,7 @@ from scipy.stats import chi
 
 # multivariate crude estimate
 # if nu = 0, then simple normal estimate
-def Crude(M, d, n, mu, sigma, region, regionNumber, nu, omega):
+def Crude(M, d, mu, sigma, region, regionNumber, nu, omega):
     r = np.random.multivariate_normal(mu, sigma, M)
     d = 0
     if nu == 0:
@@ -25,7 +25,7 @@ def Crude(M, d, n, mu, sigma, region, regionNumber, nu, omega):
 # multivariate antithetic variates estimate
 # M - number of runs
 # if nu = 0, then simple normal estimate
-def antithetic(M, d, n, mu, sigma, region, regionNumber, nu, omega):
+def antithetic(M, d, mu, sigma, region, regionNumber, nu, omega):
     mu = np.array(mu)
     d = len(mu) # dimensija pagal kuria kuriam vidurkius ir kovariacija
 
@@ -92,7 +92,7 @@ def radius(d, n):
 
 
 # pV estimate
-def pV(M, d, n, mu, sigma, region, regionNumber, nu, omega):
+def pV(M, d, mu, sigma, region, regionNumber, nu, omega):
     k = []
     mu = np.transpose(np.matrix(mu))
     for i in range(0, M):
@@ -102,31 +102,31 @@ def pV(M, d, n, mu, sigma, region, regionNumber, nu, omega):
         r = radius(d, v.shape[0])
 
         z = []
-        [z.append(r[j]*np.dot(T, v[j])) for j in range(n)]
+        [z.append(r[j]*np.dot(T, v[j])) for j in range(v.shape[0])]
 
         gamma = np.linalg.cholesky(sigma)
         x = [mu + np.dot(gamma, np.transpose(elem)) for elem in z]
 
         win = 0
-        for l in range(0,n):
+        for l in range(0, v.shape[0]):
             if region((math.sqrt(nu)/omega)*(np.array(x[l]).reshape(-1,).tolist()), regionNumber):
                 win += 1
         k.append(win)
-    return sum(k)/(M*n)
+    return sum(k)/(M*v.shape[0])
 
 
 # pV w/ antithetic variates
-def pVantithetic(M, d, n, mu, sigma, region, regionNumber, nu, omega):
+def pVantithetic(M, d, mu, sigma, region, regionNumber, nu, omega):
     k = []
     mu = np.transpose(np.matrix(mu))
-    for i in range(0,M):
+    for i in range(0, M):
         T = orthoT(d)
         v = unitV(d)
         r = radius(d, v.shape[0])
 
         zPositive = []
         zNegative = []
-        for j in range(0,n):
+        for j in range(0, v.shape[0]):
             c = r[j]*np.dot(T, v[j])
             zPositive.append(c)
             zNegative.append(-c)
@@ -137,14 +137,14 @@ def pVantithetic(M, d, n, mu, sigma, region, regionNumber, nu, omega):
 
         winPositive = 0
         winNegative = 0
-        for l in range(0,n):
+        for l in range(0, v.shape[0]):
             if region((math.sqrt(nu)/omega)*(np.array(xPositive[l]).reshape(-1,).tolist()), regionNumber):
                 winPositive += 1
             if region((math.sqrt(nu)/omega)*(np.array(xNegative[l]).reshape(-1,).tolist()), regionNumber):
                 winNegative += 1
         k.append(winPositive)
         k.append(winNegative)
-    return sum(k)/(2*M*n)
+    return sum(k)/(2*M*v.shape[0])
 
 
 " COV MATRICES "
@@ -234,12 +234,12 @@ def approxFunction(nu, omega):
 # sigma - cov matrix
 # region - function of region
 # regionNumber - region number
-def studentProb(upperOmegaBound, nOmegas, nu, M, estimate, d, n, mu, sigma, region, regionNumber):
+def studentProb(upperOmegaBound, nOmegas, nu, M, estimate, d, mu, sigma, region, regionNumber):
     omegaX = np.linspace(0.00001, upperOmegaBound, nOmegas)  # points on X axis for integration approximation
     step = upperOmegaBound/nOmegas  # increase of each step
 
     normalProbabilities = []
-    [normalProbabilities.append(estimate(M, d, n, mu, sigma, region, regionNumber, nu, omegaX[i])) for i in range(0, len(omegaX))]
+    [normalProbabilities.append(estimate(M, d, mu, sigma, region, regionNumber, nu, omegaX[i])) for i in range(0, len(omegaX))]
 
     approxBlocks = []
     [approxBlocks.append(step*normalProbabilities[i]*approxFunction(nu, omegaX[i])) for i in range(0, len(omegaX))]
@@ -247,9 +247,3 @@ def studentProb(upperOmegaBound, nOmegas, nu, M, estimate, d, n, mu, sigma, regi
 
     multiplier = (2 ** (1 - (nu/2)))/(math.gamma(nu/2))
     return multiplier*approx
-
-# reads and returns true unit vectors
-def unitV(d):
-    file = 'C:/Users/Adomas/Dropbox/Bakalaurinis/vektoriai/vector'+str(d)+'.csv'
-    vectors = pd.read_csv(file, sep=" ", header=None)
-    return vectors.as_matrix()

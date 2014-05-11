@@ -30,7 +30,7 @@
       <file leaf-file-name="simulations.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simulations.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="48" selection-start="1198" selection-end="1246" vertical-scroll-proportion="0.0" vertical-offset="464" max-vertical-offset="1003">
+            <state line="40" column="48" selection-start="1198" selection-end="1246" vertical-scroll-proportion="0.0" vertical-offset="413" max-vertical-offset="1003">
               <folding />
             </state>
           </provider>
@@ -39,22 +39,20 @@
       <file leaf-file-name="functions.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="70" selection-start="3056" selection-end="3056" vertical-scroll-proportion="0.0" vertical-offset="693" max-vertical-offset="1870">
+            <state line="93" column="73" selection-start="2430" selection-end="2430" vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="2329">
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
-                <element signature="e#249#535#0" expanded="false" />
-                <element signature="e#717#1663#0" expanded="false" />
-                <element signature="e#1806#1942#0" expanded="false" />
-                <element signature="e#2018#2179#0" expanded="false" />
-                <element signature="e#2407#2955#0" expanded="false" />
-                <element signature="e#3061#4037#0" expanded="false" />
-                <element signature="e#4169#4376#0" expanded="false" />
-                <element signature="e#4407#4556#0" expanded="false" />
-                <element signature="e#4659#4967#0" expanded="false" />
-                <element signature="e#5014#5188#0" expanded="false" />
-                <element signature="e#5240#5481#0" expanded="false" />
-                <element signature="e#5590#5646#0" expanded="false" />
-                <element signature="e#6224#6806#0" expanded="false" />
+                <element signature="e#508#1205#0" expanded="false" />
+                <element signature="e#1348#1484#0" expanded="false" />
+                <element signature="e#1560#1721#0" expanded="false" />
+                <element signature="e#1785#1866#0" expanded="false" />
+                <element signature="e#2629#3635#0" expanded="false" />
+                <element signature="e#3767#3974#0" expanded="false" />
+                <element signature="e#4005#4154#0" expanded="false" />
+                <element signature="e#4257#4565#0" expanded="false" />
+                <element signature="e#4612#4786#0" expanded="false" />
+                <element signature="e#4838#5079#0" expanded="false" />
+                <element signature="e#5188#5244#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -63,7 +61,18 @@
       <file leaf-file-name="working.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/working.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="6" selection-start="250" selection-end="250" vertical-scroll-proportion="-0.22" vertical-offset="315" max-vertical-offset="714">
+            <state line="14" column="7" selection-start="251" selection-end="251" vertical-scroll-proportion="0.07714286" vertical-offset="211" max-vertical-offset="595">
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="runSimulation.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pythonMC/runSimulation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -93,6 +102,7 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/simulations.py" />
         <option value="$PROJECT_DIR$/reading.py" />
+        <option value="$PROJECT_DIR$/pythonMC/runSimulation.py" />
         <option value="$PROJECT_DIR$/functions.py" />
         <option value="$PROJECT_DIR$/working.py" />
       </list>
@@ -145,6 +155,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCintegration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pythonMC" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -455,7 +479,15 @@
       <created>1399826191901</created>
       <updated>1399826191901</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="jau mokam studenta skaiciuot">
+      <created>1399826399089</created>
+      <updated>1399826399089</updated>
+    </task>
+    <task id="LOCAL-00010" summary="jau mokam studenta skaiciuot">
+      <created>1399826941532</created>
+      <updated>1399826941532</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -544,7 +576,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -811,29 +843,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="70" selection-start="3056" selection-end="3056" vertical-scroll-proportion="0.0" vertical-offset="693" max-vertical-offset="1870">
+        <state line="93" column="73" selection-start="2430" selection-end="2430" vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="2329">
           <folding>
             <element signature="e#0#42#0" expanded="true" />
-            <element signature="e#249#535#0" expanded="false" />
-            <element signature="e#717#1663#0" expanded="false" />
-            <element signature="e#1806#1942#0" expanded="false" />
-            <element signature="e#2018#2179#0" expanded="false" />
-            <element signature="e#2407#2955#0" expanded="false" />
-            <element signature="e#3061#4037#0" expanded="false" />
-            <element signature="e#4169#4376#0" expanded="false" />
-            <element signature="e#4407#4556#0" expanded="false" />
-            <element signature="e#4659#4967#0" expanded="false" />
-            <element signature="e#5014#5188#0" expanded="false" />
-            <element signature="e#5240#5481#0" expanded="false" />
-            <element signature="e#5590#5646#0" expanded="false" />
-            <element signature="e#6224#6806#0" expanded="false" />
+            <element signature="e#508#1205#0" expanded="false" />
+            <element signature="e#1348#1484#0" expanded="false" />
+            <element signature="e#1560#1721#0" expanded="false" />
+            <element signature="e#1785#1866#0" expanded="false" />
+            <element signature="e#2629#3635#0" expanded="false" />
+            <element signature="e#3767#3974#0" expanded="false" />
+            <element signature="e#4005#4154#0" expanded="false" />
+            <element signature="e#4257#4565#0" expanded="false" />
+            <element signature="e#4612#4786#0" expanded="false" />
+            <element signature="e#4838#5079#0" expanded="false" />
+            <element signature="e#5188#5244#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonMC/runSimulation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/working.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="6" selection-start="250" selection-end="250" vertical-scroll-proportion="-0.22" vertical-offset="315" max-vertical-offset="714">
+        <state line="14" column="7" selection-start="251" selection-end="251" vertical-scroll-proportion="0.07714286" vertical-offset="211" max-vertical-offset="595">
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>

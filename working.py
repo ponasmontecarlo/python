@@ -12,24 +12,17 @@ import time
 upperOmegaBound = 10
 nOmegas = 200
 nu = 5
-M = 50
-d = 4
-n = 5
+M = 250
+d = 3
 rho = 0.1
-mu = [0, 0, 0, 0]
-sigma = [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]
+#mu = [0, 0, 0, 0]
+mu = [0, 0, 0]
+#sigma = [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]
+sigma = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
 estimate = pV
 region = orthant
 regionNumber = 1
 #####################
-
-# import pandas as pd
-#
-# A2 = pd.read_csv('C:/Users/Adomas/Dropbox/Bakalaurinis/vektoriai/A2.csv', sep=" ", header=None)
-
-# a = []
-# [a.append(studentProb(upperOmegaBound, nOmegas, nu, M, estimate, d, n, mu, sigma, region, regionNumber)) for _ in itertools.repeat(None, 1000)]
-# print(np.mean(a))
 
 tic = time.clock()
 print(studentProb(upperOmegaBound, nOmegas, nu, M, estimate, d, mu, sigma, region, regionNumber))

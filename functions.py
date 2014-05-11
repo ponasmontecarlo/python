@@ -7,34 +7,26 @@ from scipy.stats import chi
 
 
 # multivariate crude estimate
-# if nu = 0, then simple normal estimate
 def Crude(M, d, mu, sigma, region, regionNumber, nu, omega):
     r = np.random.multivariate_normal(mu, sigma, M)
     d = 0
-    if nu == 0:
-        for x in r:
-            if region(x, regionNumber):
-                d += 1
-    else:
-        for x in r:
-            if region((math.sqrt(nu)/omega)*x, regionNumber):
-                d += 1
+    for x in r:
+        if region((math.sqrt(nu)/omega)*x, regionNumber):
+            d += 1
     return d/M
 
 
 # multivariate antithetic variates estimate
 # M - number of runs
-# if nu = 0, then simple normal estimate
 def antithetic(M, d, mu, sigma, region, regionNumber, nu, omega):
-    mu = np.array(mu)
     d = len(mu) # dimensija pagal kuria kuriam vidurkius ir kovariacija
 
     zeros = np.zeros(d)
     identity = np.identity(d)
-
-    z = np.random.multivariate_normal(zeros, identity, M) # generuojam atsitiktinius dydzius
-
+    mu = np.array(mu)
     gamma = np.linalg.cholesky(sigma)
+
+    z = np.random.multivariate_normal(zeros, identity, M)  # generuojam atsitiktinius dydzius
 
     xPositive = [mu + (np.dot(gamma, elem)).T for elem in z]
     xNegative = [mu - (np.dot(gamma, elem)).T for elem in z]
@@ -42,23 +34,14 @@ def antithetic(M, d, mu, sigma, region, regionNumber, nu, omega):
     dPositive = 0
     dNegative = 0
 
-    if nu == 0:
-        for x in xPositive:
-            if region(x, regionNumber):
-                dPositive += 1
+    for x in xPositive:
+        if region((math.sqrt(nu)/omega)*x, regionNumber):
+            dPositive += 1
 
-        for x in xNegative:
-            if region(x, regionNumber):
-                dNegative += 1
+    for x in xNegative:
+        if region((math.sqrt(nu)/omega)*x, regionNumber):
+            dNegative += 1
 
-    else:
-        for x in xPositive:
-            if region((math.sqrt(nu)/omega)*x, regionNumber):
-                dPositive += 1
-
-        for x in xNegative:
-            if region((math.sqrt(nu)/omega)*x, regionNumber):
-                dNegative += 1
     return (dPositive+dNegative)/(2*M)
 
 
@@ -85,7 +68,6 @@ def unitV(d):
 # random chi
 # d - dimension
 # n - |V|
-
 def radius(d, n):
     rv = chi.rvs(d, 0, 1, n) #for x in range(0,n)] #for y in range(0,m)
     return rv
@@ -105,11 +87,11 @@ def pV(M, d, mu, sigma, region, regionNumber, nu, omega):
         [z.append(r[j]*np.dot(T, v[j])) for j in range(v.shape[0])]
 
         gamma = np.linalg.cholesky(sigma)
-        x = [mu + np.dot(gamma, np.transpose(elem)) for elem in z]
+        x = [mu + np.transpose(np.dot(gamma, np.transpose(elem))) for elem in z]
 
         win = 0
         for l in range(0, v.shape[0]):
-            if region((math.sqrt(nu)/omega)*(np.array(x[l]).reshape(-1,).tolist()), regionNumber):
+            if region((math.sqrt(nu)/omega)*(np.array(x[l]).reshape(-1,)), regionNumber):
                 win += 1
         k.append(win)
     return sum(k)/(M*v.shape[0])

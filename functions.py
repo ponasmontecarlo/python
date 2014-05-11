@@ -4,19 +4,25 @@ from scipy.stats import chi
 
 " ESTIMATORS "
 
+
 # multivariate crude estimate
-def Crude(M, d, n, mu, sigma, region, set):
+def Crude(M, d, n, mu, sigma, region, regionNumber, nu, omega):
     r = np.random.multivariate_normal(mu, sigma, M)
     d = 0
-    for x in r:
-        if region(x, set):
-            d += 1
+    if nu == 0:
+        for x in r:
+            if region(x, regionNumber):
+                d += 1
+    else:
+        for x in r:
+            if region((math.sqrt(nu)/omega)*x, regionNumber):
+                d += 1
     return d/M
 
 
 # multivariate antithetic variates estimate
 # M - number of runs
-def antithetic(M, d, n, mu, sigma, region, set):
+def antithetic(M, d, n, mu, sigma, region, regionNumber):
     mu = np.array(mu)
     d = len(mu) # dimensija pagal kuria kuriam vidurkius ir kovariacija
 
@@ -33,11 +39,11 @@ def antithetic(M, d, n, mu, sigma, region, set):
     dPositive = 0
     dNegative = 0
     for x in xPositive:
-        if region(x, set):
+        if region(x, regionNumber):
             dPositive += 1
 
     for x in xNegative:
-        if region(x, set):
+        if region(x, regionNumber):
             dNegative += 1
 
     return (dPositive+dNegative)/(2*M)
@@ -75,7 +81,7 @@ def radius(d, n):
 
 
 # pV estimate
-def pV(M, d, n, mu, sigma, region, set):
+def pV(M, d, n, mu, sigma, region, regionNumber):
     k = []
     mu = np.transpose(np.matrix(mu))
     for i in range(0, M):
@@ -91,14 +97,14 @@ def pV(M, d, n, mu, sigma, region, set):
 
         win = 0
         for l in range(0,n):
-            if region(np.array(x[l]).reshape(-1,).tolist(), set):
+            if region(np.array(x[l]).reshape(-1,).tolist(), regionNumber):
                 win += 1
         k.append(win)
     return sum(k)/(M*n)
 
 
 # pV w/ antithetic variates
-def pVantithetic(M, d, n, mu, sigma, region, set):
+def pVantithetic(M, d, n, mu, sigma, region, regionNumber):
     k = []
     mu = np.transpose(np.matrix(mu))
     for i in range(0,M):
@@ -120,9 +126,9 @@ def pVantithetic(M, d, n, mu, sigma, region, set):
         winPositive = 0
         winNegative = 0
         for l in range(0,n):
-            if region(np.array(xPositive[l]).reshape(-1,).tolist(), set):
+            if region(np.array(xPositive[l]).reshape(-1,).tolist(), regionNumber):
                 winPositive += 1
-            if region(np.array(xNegative[l]).reshape(-1,).tolist(), set):
+            if region(np.array(xNegative[l]).reshape(-1,).tolist(), regionNumber):
                 winNegative += 1
         k.append(winPositive)
         k.append(winNegative)
@@ -160,11 +166,11 @@ def covAR(n, rho):
 
 # in each insert x and set number of area
 # Elipsoid
-def elipsoid(x, set):
-    if set == 1:
+def elipsoid(x, regionNumber):
+    if regionNumber == 1:
         b = np.array([1])
         b = np.append(b, np.repeat(0, len(x)-1))
-    elif set == 2:
+    elif regionNumber == 2:
         b = np.array([0.5])
         b = np.append(b, np.repeat(0, len(x)-1))
     else:
@@ -177,20 +183,20 @@ def elipsoid(x, set):
 
 
 # Orthant
-def orthant(x, set):
-    if set == 1:
+def orthant(x, regionNumber):
+    if regionNumber == 1:
         return all(np.array(x) <= 0)
-    elif set == 2:
+    elif regionNumber == 2:
         return all(np.array(x) <= 1)
     else:
         return all(np.array(x) <= -1)
 
 
 # Rectangular
-def rectangular(x, set):
-    if set == 1:
+def rectangular(x, regionNumber):
+    if regionNumber == 1:
         return all(-1 < np.array(x)) & all(np.array(x) < 1)
-    elif set == 2:
+    elif regionNumber == 2:
         return all(0 < np.array(x)) & all(np.array(x) < 2)
     else:
         return all(0.5 < np.array(x)) & all(np.array(x) < 1.5)
@@ -200,23 +206,9 @@ def rectangular(x, set):
 
 
 # the last function to integrate for student
-def last(nu, omega):
+def approxFunction(nu, omega):
     return (omega ** (nu - 1))*(math.exp(-((omega ** 2)/2)))
 
-
-# calculates students crude prob
-def studentCrude(M, mu, sigma, region, set, nu, upperOmegaBound,nOmegas):
-    omega = np.linspace(0, upperOmegaBound, nOmegas)
-    normalProbabilities = [Crude(M, mu, sigma, region, set) for _ in itertools.repeat(None, len(omega))]
-    step = upperOmegaBound/nOmegas
-
-    final = []
-    [final.append(step*normalProbabilities[i]*last(nu, omega[i])) for i in range(0, len(omega))]
-
-    f = sum(final)
-    gamma = math.gamma(nu/2)
-    up = 2 ** (1 - (nu/2))
-    return (up/gamma)*f
 
 # calculates students prob with selected estimate and region
 # upperOmegaBound - upper bound until which integration is approximated
@@ -229,16 +221,16 @@ def studentCrude(M, mu, sigma, region, set, nu, upperOmegaBound,nOmegas):
 # mu - vector of means
 # sigma - cov matrix
 # region - function of region
-# set - region number
-def studentProb(upperOmegaBound, nOmegas, nu, M, estimate, d, n, mu, sigma, region, set):
-    omegaX = np.linspace(0, upperOmegaBound, nOmegas) # points on X axis for integration approximation
-    step = upperOmegaBound/nOmegas # increase of each step
+# regionNumber - region number
+def studentProb(upperOmegaBound, nOmegas, nu, M, estimate, d, n, mu, sigma, region, regionNumber):
+    omegaX = np.linspace(0.00001, upperOmegaBound, nOmegas)  # points on X axis for integration approximation
+    step = upperOmegaBound/nOmegas  # increase of each step
 
     normalProbabilities = []
-    [normalProbabilities.append(estimate(M, d, n, mu, sigma, region, set)) for _ in itertools.repeat(None, len(omegaX))]
+    [normalProbabilities.append(estimate(M, d, n, mu, sigma, region, regionNumber, nu, omegaX[i])) for i in range(0, len(omegaX))]
 
     approxBlocks = []
-    [approxBlocks.append(step*normalProbabilities[i]*last(nu, omegaX[i])) for i in range(0, len(omegaX))]
+    [approxBlocks.append(step*normalProbabilities[i]*approxFunction(nu, omegaX[i])) for i in range(0, len(omegaX))]
     approx = sum(approxBlocks)
 
     multiplier = (2 ** (1 - (nu/2)))/(math.gamma(nu/2))

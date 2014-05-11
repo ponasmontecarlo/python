@@ -7,7 +7,7 @@ from scipy.stats import chi
 import scipy.integrate
 import matplotlib.pyplot as plt
 
-
+#### PARAMETERS ####
 upperOmegaBound = 10
 nOmegas = 200
 nu = 5
@@ -17,20 +17,16 @@ n = 5
 rho = 0.1
 mu = [0, 0, 0]
 sigma = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
-#
-# T = orthoT(d)
-# v = unitVectors(d, n)
-# u = []
-# [u.append(np.dot(T, v[j])) for j in range(n)]
-# a = np.array(u[0]).reshape(3,1)
-# print(a[2])
-# print(scipy.stats.chi.cdf(a[0], 3))
-# print(scipy.stats.chi.cdf(a[1], 3))
-# print(scipy.stats.chi.cdf(a[2], 3))
-
-#print(studentCrude(10000, mu, sigma, orthant, 1, 5, 100, 1000))
-
-estimate = pV
+estimate = Crude
 region = orthant
-set = 1
-print(studentProb(upperOmegaBound, nOmegas, nu, M, estimate, d, n, mu, sigma, region, set))
+regionNumber = 3
+#####################
+
+#print(studentProb(upperOmegaBound, nOmegas, nu, M, estimate, d, n, mu, sigma, region, regionNumber))
+print(np.linspace(0.00001, upperOmegaBound, nOmegas))
+# r = np.random.multivariate_normal(mu, sigma, M)
+# omega = 0.1
+# for x in r:
+#     if region((math.sqrt(nu)/omega)*x, regionNumber):
+#         d += 1
+# print(d)

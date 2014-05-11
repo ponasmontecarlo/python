@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Lattice-Reduction/.idea/Lattice-Reduction.iml" filepath="$PROJECT_DIR$/../Lattice-Reduction/.idea/Lattice-Reduction.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/MCintegration.iml" filepath="$PROJECT_DIR$/.idea/MCintegration.iml" />
     </modules>
   </component>

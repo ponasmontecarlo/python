@@ -1,9 +1,9 @@
 python
 ======
 
-Pythono scriptai
+kas čia yra?
+-----------
+So far galim suskaičiuoti didžiąją dalį normaliojo įverčių, išskyrus vieną.
+Simulations moka prasukt simuliacijas ir skaičiuot variance ratios
 
-Crude
-AT
-pV
-pV AT
+jau galim skaičiuoti ir studento tikimybę, kai regionas yra orthant1, kitos aibės dar netransformuotos

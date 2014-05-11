@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68c6cc06-25a1-4d0d-ac51-097643de2fb6" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MCintegration.iml" afterPath="$PROJECT_DIR$/.idea/MCintegration.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.py" afterPath="$PROJECT_DIR$/functions.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/normalUniFunc.py" afterPath="$PROJECT_DIR$/normalUniFunc.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lattice-Reduction/lattice_plotter.py" afterPath="$PROJECT_DIR$/../Lattice-Reduction/lattice_plotter.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simulations.py" afterPath="$PROJECT_DIR$/simulations.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/working.py" afterPath="$PROJECT_DIR$/working.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -29,22 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="normalTest.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/normalTest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="423" selection-end="476" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="simulations.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="simulations.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simulations.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="13" selection-start="1262" selection-end="1262" vertical-scroll-proportion="0.58734524" vertical-offset="218" max-vertical-offset="945">
-              <folding>
-                <element signature="e#33#122#0" expanded="true" />
-              </folding>
+            <state line="31" column="93" selection-start="778" selection-end="808" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1003">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -52,34 +46,20 @@
       <file leaf-file-name="functions.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="188" column="30" selection-start="4440" selection-end="4440" vertical-scroll-proportion="0.0" vertical-offset="503" max-vertical-offset="1230">
+            <state line="232" column="89" selection-start="5921" selection-end="5921" vertical-scroll-proportion="0.0" vertical-offset="1803" max-vertical-offset="2431">
               <folding>
-                <element signature="e#151#285#0" expanded="false" />
-                <element signature="e#380#1010#0" expanded="false" />
-                <element signature="e#1153#1289#0" expanded="false" />
-                <element signature="e#1374#1570#0" expanded="false" />
-                <element signature="e#1670#1751#0" expanded="false" />
-                <element signature="e#1813#2357#0" expanded="false" />
-                <element signature="e#2443#3353#0" expanded="false" />
-                <element signature="e#3485#3692#0" expanded="false" />
-                <element signature="e#3723#3872#0" expanded="false" />
-                <element signature="e#3966#4256#0" expanded="false" />
-                <element signature="e#4493#4716#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="normalUniFunc.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/normalUniFunc.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="21" selection-start="2278" selection-end="2278" vertical-scroll-proportion="0.0" vertical-offset="998" max-vertical-offset="1725">
-              <folding>
-                <element signature="e#367#997#0" expanded="false" />
-                <element signature="e#2381#3291#0" expanded="false" />
-                <element signature="e#3427#3634#0" expanded="false" />
-                <element signature="e#3665#3814#0" expanded="false" />
-                <element signature="e#3865#4155#0" expanded="false" />
+                <element signature="e#0#42#0" expanded="true" />
+                <element signature="e#1199#1335#0" expanded="false" />
+                <element signature="e#1420#1616#0" expanded="false" />
+                <element signature="e#1681#1762#0" expanded="false" />
+                <element signature="e#1824#2338#0" expanded="false" />
+                <element signature="e#2424#3334#0" expanded="false" />
+                <element signature="e#3466#3673#0" expanded="false" />
+                <element signature="e#3704#3853#0" expanded="false" />
+                <element signature="e#3947#4237#0" expanded="false" />
+                <element signature="e#4275#4431#0" expanded="false" />
+                <element signature="e#4474#4697#0" expanded="false" />
+                <element signature="e#5926#6480#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -88,11 +68,23 @@
       <file leaf-file-name="working.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/working.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+            <state line="34" column="7" selection-start="666" selection-end="666" vertical-scroll-proportion="0.0" vertical-offset="69" max-vertical-offset="697">
               <folding>
-                <element signature="e#0#151#0" expanded="true" />
+                <element signature="e#0#23#0" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="37" selection-start="221" selection-end="221" vertical-scroll-proportion="0.2982456" vertical-offset="0" max-vertical-offset="456">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
           </provider>
         </entry>
       </file>
@@ -114,17 +106,19 @@
         <option value="$PROJECT_DIR$/normalUni.py" />
         <option value="$PROJECT_DIR$/normalTest.py" />
         <option value="$PROJECT_DIR$/normalUniFunc.py" />
-        <option value="$PROJECT_DIR$/functions.py" />
-        <option value="$PROJECT_DIR$/working.py" />
         <option value="$PROJECT_DIR$/simulations.py" />
+        <option value="$PROJECT_DIR$/LLL.py" />
+        <option value="$PROJECT_DIR$/working.py" />
+        <option value="$PROJECT_DIR$/functions.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="49" />
-    <option name="y" value="24" />
-    <option name="width" value="1871" />
-    <option name="height" value="1056" />
+    <option name="x" value="54" />
+    <option name="y" value="-8" />
+    <option name="width" value="1320" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -177,9 +171,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lattice-Reduction" />
     <property name="FullScreen" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -190,7 +184,7 @@
       <console-settings />
     </option>
   </component>
-  <component name="RunManager" selected="Python.simulations">
+  <component name="RunManager" selected="Python.working">
     <configuration default="false" name="normalUni" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -241,11 +235,13 @@
       <module name="MCintegration" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/working.py" />
       <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="simulations" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="LLL" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -257,7 +253,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="MCintegration" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/simulations.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LLL.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -388,12 +384,12 @@
       <item index="0" class="java.lang.String" itemvalue="Python.normalUni" />
       <item index="1" class="java.lang.String" itemvalue="Python.normalTest" />
       <item index="2" class="java.lang.String" itemvalue="Python.working" />
-      <item index="3" class="java.lang.String" itemvalue="Python.simulations" />
+      <item index="3" class="java.lang.String" itemvalue="Python.LLL" />
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.simulations" />
-        <item index="1" class="java.lang.String" itemvalue="Python.working" />
+        <item index="0" class="java.lang.String" itemvalue="Python.working" />
+        <item index="1" class="java.lang.String" itemvalue="Python.LLL" />
         <item index="2" class="java.lang.String" itemvalue="Python.normalTest" />
         <item index="3" class="java.lang.String" itemvalue="Python.normalUni" />
       </list>
@@ -435,59 +431,71 @@
       <created>1399322156888</created>
       <updated>1399322156888</updated>
     </task>
-    <task id="LOCAL-00004" summary="new scripts">
-      <created>1399474565927</created>
-      <updated>1399474565927</updated>
-    </task>
-    <task id="LOCAL-00005" summary="new scripts">
-      <created>1399474707945</created>
-      <updated>1399474707945</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
+  <component name="TodoView" selected-index="1">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="24" width="1871" height="1056" extended-state="6" />
+    <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32721713" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1096108" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.08008658" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32568806" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10911925" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.080280595" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39908257" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21145834" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3058104" sideWeight="0.5003897" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22477064" sideWeight="0.49961028" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32568806" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32721713" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39908257" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3058104" sideWeight="0.5003897" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1096108" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10911925" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.08008658" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.080280595" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21145834" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3058104" sideWeight="0.49961028" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -507,97 +515,65 @@
     <MESSAGE value="testing" />
     <MESSAGE value="cov matrices &amp; elipsoid" />
     <MESSAGE value="added orthant &amp; rectangular regions" />
-    <MESSAGE value="new scripts" />
-    <option name="LAST_COMMIT_MESSAGE" value="new scripts" />
+    <option name="LAST_COMMIT_MESSAGE" value="added orthant &amp; rectangular regions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/normalTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="720">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simulations.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="795">
-          <folding>
-            <element signature="e#33#122#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="14" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255">
-          <folding>
-            <element signature="e#151#285#0" expanded="false" />
-            <element signature="e#380#1010#0" expanded="false" />
-            <element signature="e#1153#1289#0" expanded="false" />
-            <element signature="e#1374#1570#0" expanded="false" />
-            <element signature="e#1670#1751#0" expanded="false" />
-            <element signature="e#1813#2357#0" expanded="false" />
-            <element signature="e#2443#3353#0" expanded="false" />
-            <element signature="e#3485#3692#0" expanded="false" />
-            <element signature="e#3723#3872#0" expanded="false" />
-            <element signature="e#3966#4256#0" expanded="false" />
-            <element signature="e#4493#4716#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/normalUniFunc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="68" selection-end="286" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="2925">
-          <folding>
-            <element signature="e#367#997#0" expanded="false" />
-            <element signature="e#2381#3291#0" expanded="false" />
-            <element signature="e#3427#3634#0" expanded="false" />
-            <element signature="e#3665#3814#0" expanded="false" />
-            <element signature="e#3865#4155#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/working.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="615">
+        <state line="22" column="0" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="612">
           <folding>
-            <element signature="e#0#151#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/normalTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="14" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="810">
+        <state line="14" column="14" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/normalUniFunc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="44" selection-start="321" selection-end="361" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="2925">
-          <folding>
-            <element signature="e#367#997#0" expanded="false" />
-            <element signature="e#2381#3291#0" expanded="false" />
-            <element signature="e#3427#3634#0" expanded="false" />
-            <element signature="e#3665#3814#0" expanded="false" />
-            <element signature="e#3865#4155#0" expanded="false" />
-          </folding>
+        <state line="17" column="44" selection-start="321" selection-end="361" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="3315">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/working.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="29" selection-start="480" selection-end="480" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="375">
+        <state line="14" column="0" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="272">
           <folding>
-            <element signature="e#0#151#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/normalTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="14" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/normalUniFunc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="44" selection-start="321" selection-end="361" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="3315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/working.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="272">
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -612,13 +588,7 @@
     <entry file="file://$PROJECT_DIR$/normalUniFunc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="299" selection-end="956" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="3383">
-          <folding>
-            <element signature="e#367#997#0" expanded="false" />
-            <element signature="e#2381#3291#0" expanded="false" />
-            <element signature="e#3427#3634#0" expanded="false" />
-            <element signature="e#3665#3814#0" expanded="false" />
-            <element signature="e#3865#4155#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -626,7 +596,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="51" column="29" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
           <folding>
-            <element signature="e#0#151#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -641,13 +611,7 @@
     <entry file="file://$PROJECT_DIR$/normalUniFunc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="299" selection-end="956" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="3383">
-          <folding>
-            <element signature="e#367#997#0" expanded="false" />
-            <element signature="e#2381#3291#0" expanded="false" />
-            <element signature="e#3427#3634#0" expanded="false" />
-            <element signature="e#3665#3814#0" expanded="false" />
-            <element signature="e#3865#4155#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -655,7 +619,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="51" column="29" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="595">
           <folding>
-            <element signature="e#0#151#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -663,13 +627,7 @@
     <entry file="file://$PROJECT_DIR$/normalUniFunc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="102" column="0" selection-start="2436" selection-end="2436" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2329">
-          <folding>
-            <element signature="e#367#997#0" expanded="false" />
-            <element signature="e#2381#3291#0" expanded="false" />
-            <element signature="e#3427#3634#0" expanded="false" />
-            <element signature="e#3665#3814#0" expanded="false" />
-            <element signature="e#3865#4155#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -683,13 +641,7 @@
     <entry file="file://$PROJECT_DIR$/normalUniFunc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="0" selection-start="1178" selection-end="1178" vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="1649">
-          <folding>
-            <element signature="e#367#997#0" expanded="false" />
-            <element signature="e#2381#3291#0" expanded="false" />
-            <element signature="e#3427#3634#0" expanded="false" />
-            <element signature="e#3665#3814#0" expanded="false" />
-            <element signature="e#3865#4155#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -703,13 +655,7 @@
     <entry file="file://$PROJECT_DIR$/normalUniFunc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="0" selection-start="1178" selection-end="1178" vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="1649">
-          <folding>
-            <element signature="e#367#997#0" expanded="false" />
-            <element signature="e#2381#3291#0" expanded="false" />
-            <element signature="e#3427#3634#0" expanded="false" />
-            <element signature="e#3665#3814#0" expanded="false" />
-            <element signature="e#3865#4155#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -723,13 +669,7 @@
     <entry file="file://$PROJECT_DIR$/normalUniFunc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="0" selection-start="1178" selection-end="1178" vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="1649">
-          <folding>
-            <element signature="e#367#997#0" expanded="false" />
-            <element signature="e#2381#3291#0" expanded="false" />
-            <element signature="e#3427#3634#0" expanded="false" />
-            <element signature="e#3665#3814#0" expanded="false" />
-            <element signature="e#3865#4155#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -743,13 +683,7 @@
     <entry file="file://$PROJECT_DIR$/normalUniFunc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="0" selection-start="1178" selection-end="1178" vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="1649">
-          <folding>
-            <element signature="e#367#997#0" expanded="false" />
-            <element signature="e#2381#3291#0" expanded="false" />
-            <element signature="e#3427#3634#0" expanded="false" />
-            <element signature="e#3665#3814#0" expanded="false" />
-            <element signature="e#3865#4155#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -763,13 +697,7 @@
     <entry file="file://$PROJECT_DIR$/normalUniFunc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="0" selection-start="1178" selection-end="1178" vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="1649">
-          <folding>
-            <element signature="e#367#997#0" expanded="false" />
-            <element signature="e#2381#3291#0" expanded="false" />
-            <element signature="e#3427#3634#0" expanded="false" />
-            <element signature="e#3665#3814#0" expanded="false" />
-            <element signature="e#3865#4155#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -783,13 +711,7 @@
     <entry file="file://$PROJECT_DIR$/normalUniFunc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="0" selection-start="1178" selection-end="1178" vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="1649">
-          <folding>
-            <element signature="e#367#997#0" expanded="false" />
-            <element signature="e#2381#3291#0" expanded="false" />
-            <element signature="e#3427#3634#0" expanded="false" />
-            <element signature="e#3665#3814#0" expanded="false" />
-            <element signature="e#3865#4155#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -803,13 +725,7 @@
     <entry file="file://$PROJECT_DIR$/normalUniFunc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="0" selection-start="1178" selection-end="1178" vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="1455">
-          <folding>
-            <element signature="e#367#997#0" expanded="false" />
-            <element signature="e#2381#3291#0" expanded="false" />
-            <element signature="e#3427#3634#0" expanded="false" />
-            <element signature="e#3665#3814#0" expanded="false" />
-            <element signature="e#3865#4155#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -823,13 +739,7 @@
     <entry file="file://$PROJECT_DIR$/normalUniFunc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="93" column="0" selection-start="0" selection-end="2164" vertical-scroll-proportion="0.0" vertical-offset="1395" max-vertical-offset="1455">
-          <folding>
-            <element signature="e#367#997#0" expanded="false" />
-            <element signature="e#2381#3291#0" expanded="false" />
-            <element signature="e#3427#3634#0" expanded="false" />
-            <element signature="e#3665#3814#0" expanded="false" />
-            <element signature="e#3865#4155#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -843,13 +753,7 @@
     <entry file="file://$PROJECT_DIR$/normalUniFunc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="93" column="0" selection-start="0" selection-end="2164" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1649">
-          <folding>
-            <element signature="e#367#997#0" expanded="false" />
-            <element signature="e#2381#3291#0" expanded="false" />
-            <element signature="e#3427#3634#0" expanded="false" />
-            <element signature="e#3665#3814#0" expanded="false" />
-            <element signature="e#3865#4155#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -863,13 +767,7 @@
     <entry file="file://$PROJECT_DIR$/normalUniFunc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="93" column="0" selection-start="0" selection-end="2164" vertical-scroll-proportion="0.0" vertical-offset="1395" max-vertical-offset="1455">
-          <folding>
-            <element signature="e#367#997#0" expanded="false" />
-            <element signature="e#2381#3291#0" expanded="false" />
-            <element signature="e#3427#3634#0" expanded="false" />
-            <element signature="e#3665#3814#0" expanded="false" />
-            <element signature="e#3865#4155#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -883,13 +781,7 @@
     <entry file="file://$PROJECT_DIR$/normalUniFunc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="91" column="25" selection-start="1721" selection-end="2139" vertical-scroll-proportion="0.0" vertical-offset="1365" max-vertical-offset="1485">
-          <folding>
-            <element signature="e#367#997#0" expanded="false" />
-            <element signature="e#2381#3291#0" expanded="false" />
-            <element signature="e#3427#3634#0" expanded="false" />
-            <element signature="e#3665#3814#0" expanded="false" />
-            <element signature="e#3865#4155#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -903,13 +795,7 @@
     <entry file="file://$PROJECT_DIR$/normalUniFunc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="34" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="289">
-          <folding>
-            <element signature="e#367#997#0" expanded="false" />
-            <element signature="e#2381#3291#0" expanded="false" />
-            <element signature="e#3427#3634#0" expanded="false" />
-            <element signature="e#3665#3814#0" expanded="false" />
-            <element signature="e#3865#4155#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -923,13 +809,7 @@
     <entry file="file://$PROJECT_DIR$/normalUniFunc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="34" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="289">
-          <folding>
-            <element signature="e#367#997#0" expanded="false" />
-            <element signature="e#2381#3291#0" expanded="false" />
-            <element signature="e#3427#3634#0" expanded="false" />
-            <element signature="e#3665#3814#0" expanded="false" />
-            <element signature="e#3865#4155#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -943,13 +823,7 @@
     <entry file="file://$PROJECT_DIR$/normalUniFunc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="34" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="289">
-          <folding>
-            <element signature="e#367#997#0" expanded="false" />
-            <element signature="e#2381#3291#0" expanded="false" />
-            <element signature="e#3427#3634#0" expanded="false" />
-            <element signature="e#3665#3814#0" expanded="false" />
-            <element signature="e#3865#4155#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -963,84 +837,75 @@
     <entry file="file://$PROJECT_DIR$/normalUniFunc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="20" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="238">
-          <folding>
-            <element signature="e#367#997#0" expanded="false" />
-            <element signature="e#2381#3291#0" expanded="false" />
-            <element signature="e#3427#3634#0" expanded="false" />
-            <element signature="e#3665#3814#0" expanded="false" />
-            <element signature="e#3865#4155#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/normalUniFunc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="20" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="238">
-          <folding>
-            <element signature="e#367#997#0" expanded="false" />
-            <element signature="e#2381#3291#0" expanded="false" />
-            <element signature="e#3427#3634#0" expanded="false" />
-            <element signature="e#3665#3814#0" expanded="false" />
-            <element signature="e#3865#4155#0" expanded="false" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/normalTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="14" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="816">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/working.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+        <state line="34" column="7" selection-start="666" selection-end="666" vertical-scroll-proportion="0.0" vertical-offset="69" max-vertical-offset="697">
           <folding>
-            <element signature="e#0#151#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="188" column="30" selection-start="4440" selection-end="4440" vertical-scroll-proportion="0.0" vertical-offset="503" max-vertical-offset="1230">
-          <folding>
-            <element signature="e#151#285#0" expanded="false" />
-            <element signature="e#380#1010#0" expanded="false" />
-            <element signature="e#1153#1289#0" expanded="false" />
-            <element signature="e#1374#1570#0" expanded="false" />
-            <element signature="e#1670#1751#0" expanded="false" />
-            <element signature="e#1813#2357#0" expanded="false" />
-            <element signature="e#2443#3353#0" expanded="false" />
-            <element signature="e#3485#3692#0" expanded="false" />
-            <element signature="e#3723#3872#0" expanded="false" />
-            <element signature="e#3966#4256#0" expanded="false" />
-            <element signature="e#4493#4716#0" expanded="false" />
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/normalUniFunc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="21" selection-start="2278" selection-end="2278" vertical-scroll-proportion="0.0" vertical-offset="998" max-vertical-offset="1725">
-          <folding>
-            <element signature="e#367#997#0" expanded="false" />
-            <element signature="e#2381#3291#0" expanded="false" />
-            <element signature="e#3427#3634#0" expanded="false" />
-            <element signature="e#3665#3814#0" expanded="false" />
-            <element signature="e#3865#4155#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/normalTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="423" selection-end="476" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+        <state line="17" column="44" selection-start="321" selection-end="361" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="3315">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/simulations.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="13" selection-start="1262" selection-end="1262" vertical-scroll-proportion="0.58734524" vertical-offset="218" max-vertical-offset="945">
+        <state line="31" column="93" selection-start="778" selection-end="808" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1003">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="232" column="89" selection-start="5921" selection-end="5921" vertical-scroll-proportion="0.0" vertical-offset="1803" max-vertical-offset="2431">
           <folding>
-            <element signature="e#33#122#0" expanded="true" />
+            <element signature="e#0#42#0" expanded="true" />
+            <element signature="e#1199#1335#0" expanded="false" />
+            <element signature="e#1420#1616#0" expanded="false" />
+            <element signature="e#1681#1762#0" expanded="false" />
+            <element signature="e#1824#2338#0" expanded="false" />
+            <element signature="e#2424#3334#0" expanded="false" />
+            <element signature="e#3466#3673#0" expanded="false" />
+            <element signature="e#3704#3853#0" expanded="false" />
+            <element signature="e#3947#4237#0" expanded="false" />
+            <element signature="e#4275#4431#0" expanded="false" />
+            <element signature="e#4474#4697#0" expanded="false" />
+            <element signature="e#5926#6480#0" expanded="false" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="37" selection-start="221" selection-end="221" vertical-scroll-proportion="0.2982456" vertical-offset="0" max-vertical-offset="456">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
   </component>

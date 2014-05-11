@@ -1,35 +1,34 @@
-import numpy as np, scipy, math
+import numpy as np, scipy, math, itertools
 from scipy.stats import chi
 
 
 " ESTIMATORS "
 
 # multivariate crude estimate
-
-def Crude(n, mu, sigma, region, set):
-    r = np.random.multivariate_normal(mu, sigma, n)
+def Crude(M, d, n, mu, sigma, region, set):
+    r = np.random.multivariate_normal(mu, sigma, M)
     d = 0
     for x in r:
         if region(x, set):
             d += 1
-    return d/n
+    return d/M
 
 
 # multivariate antithetic variates estimate
-
-def antithetic(n, mu, sigma, region, set):
+# M - number of runs
+def antithetic(M, d, n, mu, sigma, region, set):
     mu = np.array(mu)
     d = len(mu) # dimensija pagal kuria kuriam vidurkius ir kovariacija
 
     zeros = np.zeros(d)
     identity = np.identity(d)
 
-    z = np.random.multivariate_normal(zeros,identity,n) # generuojam atsitiktinius dydzius
+    z = np.random.multivariate_normal(zeros, identity, M) # generuojam atsitiktinius dydzius
 
     gamma = np.linalg.cholesky(sigma)
 
-    xPositive = [mu + (np.dot(gamma,elem)).T for elem in z]
-    xNegative = [mu - (np.dot(gamma,elem)).T for elem in z]
+    xPositive = [mu + (np.dot(gamma, elem)).T for elem in z]
+    xNegative = [mu - (np.dot(gamma, elem)).T for elem in z]
 
     dPositive = 0
     dNegative = 0
@@ -41,7 +40,7 @@ def antithetic(n, mu, sigma, region, set):
         if region(x, set):
             dNegative += 1
 
-    return (dPositive+dNegative)/(2*n)
+    return (dPositive+dNegative)/(2*M)
 
 
 # functions for pV and pVantithetic functions
@@ -69,7 +68,7 @@ def unitVectors(d, n):
 # random chi
 # d - dimension
 # n - |V|
-# m - montecarlo itterations number
+
 def radius(d, n):
     rv = chi.rvs(d, 0, 1, n) #for x in range(0,n)] #for y in range(0,m)
     return rv
@@ -79,15 +78,13 @@ def radius(d, n):
 def pV(M, d, n, mu, sigma, region, set):
     k = []
     mu = np.transpose(np.matrix(mu))
-    for i in range(0,M):
+    for i in range(0, M):
         r = radius(d, n)
         T = orthoT(d)
         v = unitVectors(d, n)
 
         z = []
-        for j in range(0,n):
-            c = r[j]*np.dot(T, v[j])
-            z.append(c)
+        [z.append(r[j]*np.dot(T, v[j])) for j in range(n)]
 
         gamma = np.linalg.cholesky(sigma)
         x = [mu + np.dot(gamma, np.transpose(elem)) for elem in z]
@@ -197,3 +194,52 @@ def rectangular(x, set):
         return all(0 < np.array(x)) & all(np.array(x) < 2)
     else:
         return all(0.5 < np.array(x)) & all(np.array(x) < 1.5)
+
+
+" GOING FOR A STUDENT "
+
+
+# the last function to integrate for student
+def last(nu, omega):
+    return (omega ** (nu - 1))*(math.exp(-((omega ** 2)/2)))
+
+
+# calculates students crude prob
+def studentCrude(M, mu, sigma, region, set, nu, upperOmegaBound,nOmegas):
+    omega = np.linspace(0, upperOmegaBound, nOmegas)
+    normalProbabilities = [Crude(M, mu, sigma, region, set) for _ in itertools.repeat(None, len(omega))]
+    step = upperOmegaBound/nOmegas
+
+    final = []
+    [final.append(step*normalProbabilities[i]*last(nu, omega[i])) for i in range(0, len(omega))]
+
+    f = sum(final)
+    gamma = math.gamma(nu/2)
+    up = 2 ** (1 - (nu/2))
+    return (up/gamma)*f
+
+# calculates students prob with selected estimate and region
+# upperOmegaBound - upper bound until which integration is approximated
+# nOmegas - number of integration approximation points
+# nu - degrees of freedom
+# M - number of inside runs
+# estimate - function of estimate
+# d - dimension of orthogonal matrix and v vectors length
+# n - |V| number of unit vectors
+# mu - vector of means
+# sigma - cov matrix
+# region - function of region
+# set - region number
+def studentProb(upperOmegaBound, nOmegas, nu, M, estimate, d, n, mu, sigma, region, set):
+    omegaX = np.linspace(0, upperOmegaBound, nOmegas) # points on X axis for integration approximation
+    step = upperOmegaBound/nOmegas # increase of each step
+
+    normalProbabilities = []
+    [normalProbabilities.append(estimate(M, d, n, mu, sigma, region, set)) for _ in itertools.repeat(None, len(omegaX))]
+
+    approxBlocks = []
+    [approxBlocks.append(step*normalProbabilities[i]*last(nu, omegaX[i])) for i in range(0, len(omegaX))]
+    approx = sum(approxBlocks)
+
+    multiplier = (2 ** (1 - (nu/2)))/(math.gamma(nu/2))
+    return multiplier*approx

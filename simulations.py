@@ -12,7 +12,7 @@ import time
 #############
 
 d = 3  # dimension
-n = 5  # number of v's which should be chosen later
+n = 6  # number of v's which should be chosen later
 rho = 0.1  # rho for cov matrices
 mu = [0, 0, 0]  # means vector
 sigma = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]  # cov matrix which should be constructed later
@@ -33,13 +33,12 @@ crude = []
 varCrude = np.var(crude)
 
 # AT estimate
-at = []
-[at.append(antithetic(insideRuns, mu, sigma, region, regionSet)) for _ in itertools.repeat(None, simulations)]
-varAT = np.var(at)
-print('Antithetic variates estimate variance ratio on', region.__name__, 'set', regionSet, 'with', insideRuns, 'inside runs and', simulations, 'simulations is', varCrude/varAT)
-toc = time.clock()
-print('Elapsed time = ', (toc - tic), 'seconds')
-
+# at = []
+# [at.append(antithetic(insideRuns, mu, sigma, region, regionSet)) for _ in itertools.repeat(None, simulations)]
+# varAT = np.var(at)
+# print('Antithetic variates estimate variance ratio on', region.__name__, 'set', regionSet, 'with', insideRuns, 'inside runs and', simulations, 'simulations is', varCrude/varAT)
+# toc = time.clock()
+# print('Elapsed time = ', (toc - tic), 'seconds')
 
 # pV estimate
 pv = []
@@ -50,9 +49,9 @@ toc = time.clock()
 print('Elapsed time = ', (toc - tic), 'seconds')
 
 # pV AT estimate
-pvAT = []
-[pvAT.append(pVantithetic(insideRuns, d, n, mu, sigma, region, regionSet)) for _ in itertools.repeat(None, simulations)]
-varpvAT = np.var(pvAT)
-print('pV antithetic variates estimate variance ratio on', region.__name__, 'set', regionSet, 'with', insideRuns, 'inside runs and', simulations, 'simulations is', varCrude/varpvAT)
-toc = time.clock()
-print('Elapsed time = ', (toc - tic), 'seconds')
+# pvAT = []
+# [pvAT.append(pVantithetic(insideRuns, d, n, mu, sigma, region, regionSet)) for _ in itertools.repeat(None, simulations)]
+# varpvAT = np.var(pvAT)
+# print('pV antithetic variates estimate variance ratio on', region.__name__, 'set', regionSet, 'with', insideRuns, 'inside runs and', simulations, 'simulations is', varCrude/varpvAT)
+# toc = time.clock()
+# print('Elapsed time = ', (toc - tic), 'seconds')

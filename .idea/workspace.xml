@@ -36,35 +36,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="functions.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="0" selection-start="2990" selection-end="2990" vertical-scroll-proportion="-3.8461537" vertical-offset="614" max-vertical-offset="1836">
+            <state line="100" column="12" selection-start="2536" selection-end="2536" vertical-scroll-proportion="1.7257019" vertical-offset="0" max-vertical-offset="2159">
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
                 <element signature="e#249#535#0" expanded="false" />
                 <element signature="e#717#1663#0" expanded="false" />
                 <element signature="e#1806#1942#0" expanded="false" />
-                <element signature="e#2027#2223#0" expanded="false" />
-                <element signature="e#2288#2369#0" expanded="false" />
-                <element signature="e#2451#2989#0" expanded="false" />
-                <element signature="e#3095#4062#0" expanded="false" />
-                <element signature="e#4194#4401#0" expanded="false" />
-                <element signature="e#4432#4581#0" expanded="false" />
-                <element signature="e#4684#4992#0" expanded="false" />
-                <element signature="e#5039#5213#0" expanded="false" />
-                <element signature="e#5265#5506#0" expanded="false" />
-                <element signature="e#5615#5671#0" expanded="false" />
-                <element signature="e#6249#6831#0" expanded="false" />
+                <element signature="e#2018#2179#0" expanded="false" />
+                <element signature="e#2244#2325#0" expanded="false" />
+                <element signature="e#3051#4018#0" expanded="false" />
+                <element signature="e#4150#4357#0" expanded="false" />
+                <element signature="e#4388#4537#0" expanded="false" />
+                <element signature="e#4640#4948#0" expanded="false" />
+                <element signature="e#4995#5169#0" expanded="false" />
+                <element signature="e#5221#5462#0" expanded="false" />
+                <element signature="e#5571#5627#0" expanded="false" />
+                <element signature="e#6205#6787#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="working.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="working.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/working.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="9" selection-start="253" selection-end="253" vertical-scroll-proportion="0.24425288" vertical-offset="153" max-vertical-offset="714">
+            <state line="14" column="7" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="714">
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -93,9 +92,9 @@
         <option value="$PROJECT_DIR$/LLL.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/simulations.py" />
-        <option value="$PROJECT_DIR$/functions.py" />
         <option value="$PROJECT_DIR$/reading.py" />
         <option value="$PROJECT_DIR$/working.py" />
+        <option value="$PROJECT_DIR$/functions.py" />
       </list>
     </option>
   </component>
@@ -448,7 +447,11 @@
       <created>1399812977970</created>
       <updated>1399812977970</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="jau mokam studenta skaiciuot">
+      <created>1399825002659</created>
+      <updated>1399825002659</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -484,7 +487,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39908257" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3058104" sideWeight="0.5003897" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42813456" sideWeight="0.49961028" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2522936" sideWeight="0.49961028" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -802,34 +805,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/working.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="7" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="714">
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="0" selection-start="2990" selection-end="2990" vertical-scroll-proportion="-3.8461537" vertical-offset="614" max-vertical-offset="1836">
+        <state line="100" column="12" selection-start="2536" selection-end="2536" vertical-scroll-proportion="1.7257019" vertical-offset="0" max-vertical-offset="2159">
           <folding>
             <element signature="e#0#42#0" expanded="true" />
             <element signature="e#249#535#0" expanded="false" />
             <element signature="e#717#1663#0" expanded="false" />
             <element signature="e#1806#1942#0" expanded="false" />
-            <element signature="e#2027#2223#0" expanded="false" />
-            <element signature="e#2288#2369#0" expanded="false" />
-            <element signature="e#2451#2989#0" expanded="false" />
-            <element signature="e#3095#4062#0" expanded="false" />
-            <element signature="e#4194#4401#0" expanded="false" />
-            <element signature="e#4432#4581#0" expanded="false" />
-            <element signature="e#4684#4992#0" expanded="false" />
-            <element signature="e#5039#5213#0" expanded="false" />
-            <element signature="e#5265#5506#0" expanded="false" />
-            <element signature="e#5615#5671#0" expanded="false" />
-            <element signature="e#6249#6831#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/working.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="9" selection-start="253" selection-end="253" vertical-scroll-proportion="0.24425288" vertical-offset="153" max-vertical-offset="714">
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#2018#2179#0" expanded="false" />
+            <element signature="e#2244#2325#0" expanded="false" />
+            <element signature="e#3051#4018#0" expanded="false" />
+            <element signature="e#4150#4357#0" expanded="false" />
+            <element signature="e#4388#4537#0" expanded="false" />
+            <element signature="e#4640#4948#0" expanded="false" />
+            <element signature="e#4995#5169#0" expanded="false" />
+            <element signature="e#5221#5462#0" expanded="false" />
+            <element signature="e#5571#5627#0" expanded="false" />
+            <element signature="e#6205#6787#0" expanded="false" />
           </folding>
         </state>
       </provider>

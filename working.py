@@ -12,7 +12,7 @@ import time
 upperOmegaBound = 10
 nOmegas = 200
 nu = 5
-M = 10000
+M = 100
 d = 3
 n = 5
 rho = 0.1

@@ -76,12 +76,10 @@ def orthoT(d):
 # central symmetric subset V
 # d - dimension
 # n - |V|
-def unitVectors(d, n):
-    X = [np.random.normal(0, 1, d) for x in range(0, n)]
-    R = [(math.sqrt(sum([elem**2 for elem in xCord]))) for xCord in X]
-    for i in range(0,n):
-        X[i] = X[i]/R[i]
-    return np.array(X)
+def unitV(d):
+    file = 'C:/Users/Adomas/Dropbox/Bakalaurinis/vektoriai/vector'+str(d)+'.csv'
+    vectors = pd.read_csv(file, sep=" ", header=None)
+    return vectors.as_matrix()
 
 
 # random chi

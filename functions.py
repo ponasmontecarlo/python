@@ -96,9 +96,10 @@ def pV(M, d, n, mu, sigma, region, regionNumber, nu, omega):
     k = []
     mu = np.transpose(np.matrix(mu))
     for i in range(0, M):
-        r = radius(d, n)
+
         T = orthoT(d)
         v = unitV(d)
+        r = radius(d, v.shape[0])
 
         z = []
         [z.append(r[j]*np.dot(T, v[j])) for j in range(n)]
@@ -119,9 +120,9 @@ def pVantithetic(M, d, n, mu, sigma, region, regionNumber, nu, omega):
     k = []
     mu = np.transpose(np.matrix(mu))
     for i in range(0,M):
-        r = radius(d, n)
         T = orthoT(d)
         v = unitV(d)
+        r = radius(d, v.shape[0])
 
         zPositive = []
         zNegative = []

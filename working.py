@@ -5,7 +5,6 @@ import math
 import scipy
 from scipy.stats import chi
 import scipy.integrate
-import matplotlib.pyplot as plt
 import time
 
 #### PARAMETERS ####
@@ -24,7 +23,24 @@ region = orthant
 regionNumber = 1
 #####################
 
-tic = time.clock()
-print(studentProb(upperOmegaBound, nOmegas, nu, M, estimate, d, mu, sigma, region, regionNumber))
-toc = time.clock()
-print('Elapsed time = ', (toc - tic), 'seconds')
+# tic = time.clock()
+# print(studentProb(upperOmegaBound, nOmegas, nu, M, estimate, d, mu, sigma, region, regionNumber))
+# toc = time.clock()
+# print('Elapsed time = ', (toc - tic), 'seconds')
+#
+# with open('home/adomas/Dropbox/Bakalaurinis/results/test.txt', 'a') as file:
+#     file.write('input')
+
+
+lines = [1,2,3,4,5,6,7]
+
+
+myfile = open('/home/adomas/Dropbox/Bakalaurinis/results/test.txt', 'w')
+for line in lines:
+    var1 = line*2
+    myfile.write("%s\n" % var1)
+
+myfile.close()
+#text_file.close()
+
+

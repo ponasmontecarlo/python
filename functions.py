@@ -60,7 +60,7 @@ def orthoT(d):
 # d - dimension
 # n - |V|
 def unitV(d):
-    file = 'C:/Users/Adomas/Dropbox/Bakalaurinis/vektoriai/vector'+str(d)+'.csv'
+    file = '/home/adomas/Dropbox/Bakalaurinis/vektoriai/vector'+str(d)+'.csv'
 #    file = 'C:/Users/Adomas/Dropbox/Bakalaurinis/vektoriai/vector'+str(d)+'.csv'
     vectors = pd.read_csv(file, sep=" ", header=None)
     return vectors.as_matrix()

@@ -12,7 +12,7 @@ sigma = identity
 estimate = pVantithetic
 region = orthant
 regionNumber = 1
-simulations = 2
+simulations = 500
 
 dropboxDestination = '/home/adomas/Dropbox/Bakalaurinis/results/' # cia nurodot savo dropboxo results folderi
 # first

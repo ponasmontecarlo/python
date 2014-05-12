@@ -5,7 +5,6 @@ from scipy.stats import chi
 
 " ESTIMATORS "
 
-
 # multivariate crude estimate
 def Crude(M, d, mu, sigma, region, regionNumber, nu, omega):
     r = np.random.multivariate_normal(mu, sigma, M)
@@ -60,7 +59,7 @@ def orthoT(d):
 # d - dimension
 # n - |V|
 def unitV(d):
-    file = 'C:/Users/Adomas/Dropbox/Bakalaurinis/vektoriai/vector'+str(d)+'.csv'
+    file = 'C:/Users/Karolis/Dropbox/Bakalaurinis/vektoriai/vector'+str(d)+'.csv'
     vectors = pd.read_csv(file, sep=" ", header=None)
     return vectors.as_matrix()
 

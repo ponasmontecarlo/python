@@ -5,14 +5,13 @@ import math
 import scipy
 from scipy.stats import chi
 import scipy.integrate
-import matplotlib.pyplot as plt
 import time
 
 #### PARAMETERS ####
 upperOmegaBound = 10
 nOmegas = 200
 nu = 5
-M = 250
+M = 20
 d = 3
 rho = 0.1
 #mu = [0, 0, 0, 0]

@@ -1,5 +1,6 @@
 import numpy as np, scipy, math, itertools
 import pandas as pd
+from numpy import matlib
 from scipy.stats import chi
 
 
@@ -7,8 +8,8 @@ from scipy.stats import chi
 
 
 # multivariate crude estimate
-def Crude(M, d, mu, sigma, region, regionNumber, nu, omega):
-    r = np.random.multivariate_normal(mu, sigma, M)
+def Crude(M, d, mu, sigma, rho, region, regionNumber, nu, omega):
+    r = np.random.multivariate_normal(mu, sigma(d, rho), M)
     d = 0
     for x in r:
         if region((math.sqrt(nu)/omega)*x, regionNumber):
@@ -18,18 +19,16 @@ def Crude(M, d, mu, sigma, region, regionNumber, nu, omega):
 
 # multivariate antithetic variates estimate
 # M - number of runs
-def antithetic(M, d, mu, sigma, region, regionNumber, nu, omega):
-    d = len(mu) # dimensija pagal kuria kuriam vidurkius ir kovariacija
-
+def antithetic(M, d, mu, sigma, rho, region, regionNumber, nu, omega):
     zeros = np.zeros(d)
-    identity = np.identity(d)
+    identityMatrix = np.identity(d)
     mu = np.array(mu)
-    gamma = np.linalg.cholesky(sigma)
+    gamma = np.linalg.cholesky(sigma(d, rho))
 
-    z = np.random.multivariate_normal(zeros, identity, M)  # generuojam atsitiktinius dydzius
+    z = np.random.multivariate_normal(zeros, identityMatrix, M)  # generuojam atsitiktinius dydzius
 
-    xPositive = [mu + (np.dot(gamma, elem)).T for elem in z]
-    xNegative = [mu - (np.dot(gamma, elem)).T for elem in z]
+    xPositive = [mu + np.squeeze(np.array(np.dot(gamma, elem))) for elem in z]
+    xNegative = [mu - np.squeeze(np.array(np.dot(gamma, elem))) for elem in z]
 
     dPositive = 0
     dNegative = 0
@@ -61,9 +60,9 @@ def orthoT(d):
 # n - |V|
 def unitV(d):
     file = '/home/adomas/Dropbox/Bakalaurinis/vektoriai/vector'+str(d)+'.csv'
-#    file = 'C:/Users/Adomas/Dropbox/Bakalaurinis/vektoriai/vector'+str(d)+'.csv'
     vectors = pd.read_csv(file, sep=" ", header=None)
-    return vectors.as_matrix()
+    vectors = vectors.as_matrix()
+    return vectors
 
 
 # random chi
@@ -75,9 +74,8 @@ def radius(d, n):
 
 
 # pV estimate
-def pV(M, d, mu, sigma, region, regionNumber, nu, omega):
+def pV(M, d, mu, sigma, rho, region, regionNumber, nu, omega):
     k = []
-    mu = np.transpose(np.matrix(mu))
     for i in range(0, M):
 
         T = orthoT(d)
@@ -85,23 +83,22 @@ def pV(M, d, mu, sigma, region, regionNumber, nu, omega):
         r = radius(d, v.shape[0])
 
         z = []
-        [z.append(r[j]*np.dot(T, v[j])) for j in range(v.shape[0])]
+        [z.append(np.squeeze(np.array(r[j]*np.dot(T, v[j])))) for j in range(v.shape[0])]
 
-        gamma = np.linalg.cholesky(sigma)
-        x = [mu + np.transpose(np.dot(gamma, np.transpose(elem))) for elem in z]
+        gamma = np.linalg.cholesky(sigma(d, rho))
+        x = [mu + np.squeeze(np.array((np.dot(gamma, elem)))) for elem in z]
 
         win = 0
         for l in range(0, v.shape[0]):
-            if region((math.sqrt(nu)/omega)*(np.array(x[l]).reshape(-1,)), regionNumber):
+            if region((math.sqrt(nu)/omega)*x[l], regionNumber):
                 win += 1
         k.append(win)
     return sum(k)/(M*v.shape[0])
 
 
 # pV w/ antithetic variates
-def pVantithetic(M, d, mu, sigma, region, regionNumber, nu, omega):
+def pVantithetic(M, d, mu, sigma, rho, region, regionNumber, nu, omega):
     k = []
-    mu = np.transpose(np.matrix(mu))
     for i in range(0, M):
         T = orthoT(d)
         v = unitV(d)
@@ -110,20 +107,20 @@ def pVantithetic(M, d, mu, sigma, region, regionNumber, nu, omega):
         zPositive = []
         zNegative = []
         for j in range(0, v.shape[0]):
-            c = r[j]*np.dot(T, v[j])
+            c = np.squeeze(np.array(r[j]*np.dot(T, v[j])))
             zPositive.append(c)
             zNegative.append(-c)
 
-        gamma = np.linalg.cholesky(sigma)
-        xPositive = [mu + np.dot(gamma, np.transpose(elem)) for elem in zPositive]
-        xNegative = [mu + np.dot(gamma, np.transpose(elem)) for elem in zNegative]
+        gamma = np.linalg.cholesky(sigma(d, rho))
+        xPositive = [mu + np.squeeze(np.array((np.dot(gamma, elem)))) for elem in zPositive]
+        xNegative = [mu + np.squeeze(np.array((np.dot(gamma, elem)))) for elem in zNegative]
 
         winPositive = 0
         winNegative = 0
         for l in range(0, v.shape[0]):
-            if region((math.sqrt(nu)/omega)*(np.array(xPositive[l]).reshape(-1,).tolist()), regionNumber):
+            if region((math.sqrt(nu)/omega)*xPositive[l], regionNumber):
                 winPositive += 1
-            if region((math.sqrt(nu)/omega)*(np.array(xNegative[l]).reshape(-1,).tolist()), regionNumber):
+            if region((math.sqrt(nu)/omega)*xNegative[l], regionNumber):
                 winNegative += 1
         k.append(winPositive)
         k.append(winNegative)
@@ -154,6 +151,11 @@ def covAR(n, rho):
         for j in range(0,n):
             matrix[i, j] = rho ** math.fabs(i - j)
     return (matrix)
+
+
+# identity
+def identity(n, rho):
+    return np.matlib.identity(n)
 
 
 "Regions"
@@ -217,12 +219,12 @@ def approxFunction(nu, omega):
 # sigma - cov matrix
 # region - function of region
 # regionNumber - region number
-def studentProb(upperOmegaBound, nOmegas, nu, M, estimate, d, mu, sigma, region, regionNumber):
+def studentProb(upperOmegaBound, nOmegas, nu, M, estimate, d, mu, sigma, rho, region, regionNumber):
     omegaX = np.linspace(0.00001, upperOmegaBound, nOmegas)  # points on X axis for integration approximation
     step = upperOmegaBound/nOmegas  # increase of each step
 
     normalProbabilities = []
-    [normalProbabilities.append(estimate(M, d, mu, sigma, region, regionNumber, nu, omegaX[i])) for i in range(0, len(omegaX))]
+    [normalProbabilities.append(estimate(M, d, mu, sigma, rho, region, regionNumber, nu, omegaX[i])) for i in range(0, len(omegaX))]
 
     approxBlocks = []
     [approxBlocks.append(step*normalProbabilities[i]*approxFunction(nu, omegaX[i])) for i in range(0, len(omegaX))]

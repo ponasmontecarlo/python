@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68c6cc06-25a1-4d0d-ac51-097643de2fb6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MCintegration.iml" afterPath="$PROJECT_DIR$/.idea/MCintegration.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.py" afterPath="$PROJECT_DIR$/functions.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runNwrite.py" afterPath="$PROJECT_DIR$/runNwrite.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/working.py" afterPath="$PROJECT_DIR$/working.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -42,45 +40,48 @@
       <file leaf-file-name="functions.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="205" column="0" selection-start="5188" selection-end="5279" vertical-scroll-proportion="0.0" vertical-offset="1155" max-vertical-offset="1921">
+            <state line="14" column="27" selection-start="354" selection-end="354" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1972">
               <folding>
-                <element signature="e#235#408#0" expanded="false" />
-                <element signature="e#551#1231#0" expanded="false" />
-                <element signature="e#1374#1510#0" expanded="false" />
-                <element signature="e#1586#1769#0" expanded="false" />
-                <element signature="e#1833#1914#0" expanded="false" />
-                <element signature="e#1998#2543#0" expanded="false" />
-                <element signature="e#2651#3602#0" expanded="false" />
-                <element signature="e#3734#3941#0" expanded="false" />
-                <element signature="e#3972#4121#0" expanded="false" />
-                <element signature="e#4161#4189#0" expanded="false" />
-                <element signature="e#4292#4600#0" expanded="false" />
-                <element signature="e#4647#4821#0" expanded="false" />
-                <element signature="e#4873#5114#0" expanded="false" />
-                <element signature="e#5223#5279#0" expanded="false" />
+                <element signature="e#473#652#0" expanded="false" />
+                <element signature="e#795#1489#0" expanded="false" />
+                <element signature="e#1632#1772#0" expanded="false" />
+                <element signature="e#1848#2035#0" expanded="false" />
+                <element signature="e#2099#2181#0" expanded="false" />
+                <element signature="e#2265#2820#0" expanded="false" />
+                <element signature="e#2928#3895#0" expanded="false" />
+                <element signature="e#4027#4237#0" expanded="false" />
+                <element signature="e#4268#4420#0" expanded="false" />
+                <element signature="e#4460#4488#0" expanded="false" />
+                <element signature="e#4591#4906#0" expanded="false" />
+                <element signature="e#4953#5127#0" expanded="false" />
+                <element signature="e#5179#5420#0" expanded="false" />
+                <element signature="e#5529#5589#0" expanded="false" />
+                <element signature="e#5652#5708#0" expanded="false" />
+                <element signature="e#5840#6063#0" expanded="false" />
+                <element signature="e#6199#6447#0" expanded="false" />
+                <element signature="e#6554#6976#0" expanded="false" />
+                <element signature="e#7559#8162#0" expanded="false" />
+                <element signature="e#8278#8767#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="working.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="working.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/working.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="24" selection-start="2780" selection-end="2780" vertical-scroll-proportion="0.7493858" vertical-offset="562" max-vertical-offset="969">
+            <state line="12" column="0" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241">
               <folding>
-                <element signature="e#1206#1262#0" expanded="false" />
-                <element signature="e#1394#1617#0" expanded="false" />
-                <element signature="e#1753#2001#0" expanded="false" />
-                <element signature="e#2108#2530#0" expanded="false" />
+                <element signature="e#0#24#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="runNwrite.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="runNwrite.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/runNwrite.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="16" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="680">
+            <state line="22" column="17" selection-start="398" selection-end="398" vertical-scroll-proportion="0.51232874" vertical-offset="0" max-vertical-offset="1003">
               <folding />
             </state>
           </provider>
@@ -109,9 +110,9 @@
         <option value="$PROJECT_DIR$/simulations.py" />
         <option value="$PROJECT_DIR$/reading.py" />
         <option value="$PROJECT_DIR$/pythonMC/runSimulation.py" />
+        <option value="$PROJECT_DIR$/working.py" />
         <option value="$PROJECT_DIR$/functions.py" />
         <option value="$PROJECT_DIR$/runNwrite.py" />
-        <option value="$PROJECT_DIR$/working.py" />
       </list>
     </option>
   </component>
@@ -204,7 +205,7 @@
       </console-settings>
     </option>
   </component>
-  <component name="RunManager" selected="Python.working">
+  <component name="RunManager" selected="Python.runNwrite">
     <configuration default="false" name="normalTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -427,8 +428,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.working" />
-        <item index="1" class="java.lang.String" itemvalue="Python.runNwrite" />
+        <item index="0" class="java.lang.String" itemvalue="Python.runNwrite" />
+        <item index="1" class="java.lang.String" itemvalue="Python.working" />
         <item index="2" class="java.lang.String" itemvalue="Python.reading" />
         <item index="3" class="java.lang.String" itemvalue="Python.LLL" />
         <item index="4" class="java.lang.String" itemvalue="Python.normalTest" />
@@ -519,7 +520,11 @@
       <created>1399912476902</created>
       <updated>1399912476902</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="pridėtos nusprendimo f-jos">
+      <created>1400012613329</created>
+      <updated>1400012613329</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -544,8 +549,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -554,13 +560,12 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39908257" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3058104" sideWeight="0.5003897" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3379205" sideWeight="0.49961028" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40214068" sideWeight="0.49961028" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -605,7 +610,8 @@
     <MESSAGE value="added orthant &amp; rectangular regions" />
     <MESSAGE value="jau mokam studenta skaiciuot" />
     <MESSAGE value="naujas failas pridetas" />
-    <option name="LAST_COMMIT_MESSAGE" value="naujas failas pridetas" />
+    <MESSAGE value="pridėtos nusprendimo f-jos" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridėtos nusprendimo f-jos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -622,10 +628,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="272">
           <folding>
-            <element signature="e#1206#1262#0" expanded="false" />
-            <element signature="e#1394#1617#0" expanded="false" />
-            <element signature="e#1753#2001#0" expanded="false" />
-            <element signature="e#2108#2530#0" expanded="false" />
+            <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -644,10 +647,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="272">
           <folding>
-            <element signature="e#1206#1262#0" expanded="false" />
-            <element signature="e#1394#1617#0" expanded="false" />
-            <element signature="e#1753#2001#0" expanded="false" />
-            <element signature="e#2108#2530#0" expanded="false" />
+            <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -666,10 +666,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="51" column="29" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
           <folding>
-            <element signature="e#1206#1262#0" expanded="false" />
-            <element signature="e#1394#1617#0" expanded="false" />
-            <element signature="e#1753#2001#0" expanded="false" />
-            <element signature="e#2108#2530#0" expanded="false" />
+            <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -688,10 +685,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="51" column="29" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="595">
           <folding>
-            <element signature="e#1206#1262#0" expanded="false" />
-            <element signature="e#1394#1617#0" expanded="false" />
-            <element signature="e#1753#2001#0" expanded="false" />
-            <element signature="e#2108#2530#0" expanded="false" />
+            <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -883,44 +877,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/runNwrite.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="16" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="205" column="0" selection-start="5188" selection-end="5279" vertical-scroll-proportion="0.0" vertical-offset="1155" max-vertical-offset="1921">
+        <state line="14" column="27" selection-start="354" selection-end="354" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1972">
           <folding>
-            <element signature="e#235#408#0" expanded="false" />
-            <element signature="e#551#1231#0" expanded="false" />
-            <element signature="e#1374#1510#0" expanded="false" />
-            <element signature="e#1586#1769#0" expanded="false" />
-            <element signature="e#1833#1914#0" expanded="false" />
-            <element signature="e#1998#2543#0" expanded="false" />
-            <element signature="e#2651#3602#0" expanded="false" />
-            <element signature="e#3734#3941#0" expanded="false" />
-            <element signature="e#3972#4121#0" expanded="false" />
-            <element signature="e#4161#4189#0" expanded="false" />
-            <element signature="e#4292#4600#0" expanded="false" />
-            <element signature="e#4647#4821#0" expanded="false" />
-            <element signature="e#4873#5114#0" expanded="false" />
-            <element signature="e#5223#5279#0" expanded="false" />
+            <element signature="e#473#652#0" expanded="false" />
+            <element signature="e#795#1489#0" expanded="false" />
+            <element signature="e#1632#1772#0" expanded="false" />
+            <element signature="e#1848#2035#0" expanded="false" />
+            <element signature="e#2099#2181#0" expanded="false" />
+            <element signature="e#2265#2820#0" expanded="false" />
+            <element signature="e#2928#3895#0" expanded="false" />
+            <element signature="e#4027#4237#0" expanded="false" />
+            <element signature="e#4268#4420#0" expanded="false" />
+            <element signature="e#4460#4488#0" expanded="false" />
+            <element signature="e#4591#4906#0" expanded="false" />
+            <element signature="e#4953#5127#0" expanded="false" />
+            <element signature="e#5179#5420#0" expanded="false" />
+            <element signature="e#5529#5589#0" expanded="false" />
+            <element signature="e#5652#5708#0" expanded="false" />
+            <element signature="e#5840#6063#0" expanded="false" />
+            <element signature="e#6199#6447#0" expanded="false" />
+            <element signature="e#6554#6976#0" expanded="false" />
+            <element signature="e#7559#8162#0" expanded="false" />
+            <element signature="e#8278#8767#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/working.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="24" selection-start="2780" selection-end="2780" vertical-scroll-proportion="0.7493858" vertical-offset="562" max-vertical-offset="969">
+        <state line="12" column="0" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241">
           <folding>
-            <element signature="e#1206#1262#0" expanded="false" />
-            <element signature="e#1394#1617#0" expanded="false" />
-            <element signature="e#1753#2001#0" expanded="false" />
-            <element signature="e#2108#2530#0" expanded="false" />
+            <element signature="e#0#24#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runNwrite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="17" selection-start="398" selection-end="398" vertical-scroll-proportion="0.51232874" vertical-offset="0" max-vertical-offset="1003">
+          <folding />
         </state>
       </provider>
     </entry>

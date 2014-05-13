@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68c6cc06-25a1-4d0d-ac51-097643de2fb6" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MCintegration.iml" afterPath="$PROJECT_DIR$/.idea/MCintegration.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.py" afterPath="$PROJECT_DIR$/functions.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runNwrite.py" afterPath="$PROJECT_DIR$/runNwrite.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/working.py" afterPath="$PROJECT_DIR$/working.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MCintegration.iws" />
@@ -29,7 +33,7 @@
       <file leaf-file-name="simulations.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simulations.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="36" selection-start="1223" selection-end="1234" vertical-scroll-proportion="0.0" vertical-offset="362" max-vertical-offset="885">
+            <state line="40" column="36" selection-start="1223" selection-end="1234" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="1054">
               <folding />
             </state>
           </provider>
@@ -38,46 +42,46 @@
       <file leaf-file-name="functions.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="221" column="0" selection-start="5751" selection-end="6440" vertical-scroll-proportion="-282.5" vertical-offset="1385" max-vertical-offset="2040">
+            <state line="205" column="0" selection-start="5188" selection-end="5279" vertical-scroll-proportion="0.0" vertical-offset="1155" max-vertical-offset="1921">
               <folding>
-                <element signature="e#0#42#0" expanded="true" />
+                <element signature="e#235#408#0" expanded="false" />
+                <element signature="e#551#1231#0" expanded="false" />
                 <element signature="e#1374#1510#0" expanded="false" />
-                <element signature="e#1830#1911#0" expanded="false" />
-                <element signature="e#1995#2540#0" expanded="false" />
-                <element signature="e#2648#3599#0" expanded="false" />
-                <element signature="e#3731#3938#0" expanded="false" />
-                <element signature="e#3969#4118#0" expanded="false" />
-                <element signature="e#4158#4186#0" expanded="false" />
-                <element signature="e#4289#4597#0" expanded="false" />
-                <element signature="e#4644#4818#0" expanded="false" />
-                <element signature="e#4870#5111#0" expanded="false" />
-                <element signature="e#5220#5276#0" expanded="false" />
-                <element signature="e#5856#6440#0" expanded="false" />
-                <marker date="1399909894602" expanded="true" signature="546:1231" placeholder="..." />
-                <marker date="1399909894602" expanded="true" signature="1581:1766" placeholder="..." />
+                <element signature="e#1586#1769#0" expanded="false" />
+                <element signature="e#1833#1914#0" expanded="false" />
+                <element signature="e#1998#2543#0" expanded="false" />
+                <element signature="e#2651#3602#0" expanded="false" />
+                <element signature="e#3734#3941#0" expanded="false" />
+                <element signature="e#3972#4121#0" expanded="false" />
+                <element signature="e#4161#4189#0" expanded="false" />
+                <element signature="e#4292#4600#0" expanded="false" />
+                <element signature="e#4647#4821#0" expanded="false" />
+                <element signature="e#4873#5114#0" expanded="false" />
+                <element signature="e#5223#5279#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="working.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="working.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/working.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="434" selection-end="961" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
+            <state line="84" column="24" selection-start="2780" selection-end="2780" vertical-scroll-proportion="0.7493858" vertical-offset="562" max-vertical-offset="969">
               <folding>
-                <element signature="e#0#23#0" expanded="true" />
+                <element signature="e#1206#1262#0" expanded="false" />
+                <element signature="e#1394#1617#0" expanded="false" />
+                <element signature="e#1753#2001#0" expanded="false" />
+                <element signature="e#2108#2530#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="runNwrite.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="runNwrite.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/runNwrite.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="11" selection-start="369" selection-end="369" vertical-scroll-proportion="0.41608876" vertical-offset="0" max-vertical-offset="1185">
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
+            <state line="10" column="16" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="680">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -106,16 +110,16 @@
         <option value="$PROJECT_DIR$/reading.py" />
         <option value="$PROJECT_DIR$/pythonMC/runSimulation.py" />
         <option value="$PROJECT_DIR$/functions.py" />
-        <option value="$PROJECT_DIR$/working.py" />
         <option value="$PROJECT_DIR$/runNwrite.py" />
+        <option value="$PROJECT_DIR$/working.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="49" />
-    <option name="y" value="24" />
-    <option name="width" value="1871" />
-    <option name="height" value="1056" />
+    <option name="x" value="54" />
+    <option name="y" value="-8" />
+    <option name="width" value="1320" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -186,7 +190,7 @@
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lattice-Reduction" />
     <property name="FullScreen" value="false" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -200,7 +204,7 @@
       </console-settings>
     </option>
   </component>
-  <component name="RunManager" selected="Python.runNwrite">
+  <component name="RunManager" selected="Python.working">
     <configuration default="false" name="normalTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -423,8 +427,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.runNwrite" />
-        <item index="1" class="java.lang.String" itemvalue="Python.working" />
+        <item index="0" class="java.lang.String" itemvalue="Python.working" />
+        <item index="1" class="java.lang.String" itemvalue="Python.runNwrite" />
         <item index="2" class="java.lang.String" itemvalue="Python.reading" />
         <item index="3" class="java.lang.String" itemvalue="Python.LLL" />
         <item index="4" class="java.lang.String" itemvalue="Python.normalTest" />
@@ -539,24 +543,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="24" width="1871" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10911925" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.07954545" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.07950117" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39908257" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3058104" sideWeight="0.5003897" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21770833" sideWeight="0.49961028" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3379205" sideWeight="0.49961028" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -605,7 +609,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="13" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -618,7 +622,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="272">
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#1206#1262#0" expanded="false" />
+            <element signature="e#1394#1617#0" expanded="false" />
+            <element signature="e#1753#2001#0" expanded="false" />
+            <element signature="e#2108#2530#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -637,7 +644,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="272">
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#1206#1262#0" expanded="false" />
+            <element signature="e#1394#1617#0" expanded="false" />
+            <element signature="e#1753#2001#0" expanded="false" />
+            <element signature="e#2108#2530#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -656,7 +666,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="51" column="29" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#1206#1262#0" expanded="false" />
+            <element signature="e#1394#1617#0" expanded="false" />
+            <element signature="e#1753#2001#0" expanded="false" />
+            <element signature="e#2108#2530#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -675,7 +688,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="51" column="29" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="595">
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#1206#1262#0" expanded="false" />
+            <element signature="e#1394#1617#0" expanded="false" />
+            <element signature="e#1753#2001#0" expanded="false" />
+            <element signature="e#2108#2530#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -857,9 +873,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="3" selection-start="1564" selection-end="1564" vertical-scroll-proportion="0.33333334" vertical-offset="1760" max-vertical-offset="3315">
-          <folding />
-        </state>
+        <state line="131" column="3" selection-start="1564" selection-end="1564" vertical-scroll-proportion="0.33333334" vertical-offset="1760" max-vertical-offset="3315" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/simulations.py">
@@ -869,43 +883,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/runNwrite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="16" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="221" column="0" selection-start="5751" selection-end="6440" vertical-scroll-proportion="-282.5" vertical-offset="1385" max-vertical-offset="2040">
+        <state line="205" column="0" selection-start="5188" selection-end="5279" vertical-scroll-proportion="0.0" vertical-offset="1155" max-vertical-offset="1921">
           <folding>
-            <element signature="e#0#42#0" expanded="true" />
+            <element signature="e#235#408#0" expanded="false" />
+            <element signature="e#551#1231#0" expanded="false" />
             <element signature="e#1374#1510#0" expanded="false" />
-            <element signature="e#1830#1911#0" expanded="false" />
-            <element signature="e#1995#2540#0" expanded="false" />
-            <element signature="e#2648#3599#0" expanded="false" />
-            <element signature="e#3731#3938#0" expanded="false" />
-            <element signature="e#3969#4118#0" expanded="false" />
-            <element signature="e#4158#4186#0" expanded="false" />
-            <element signature="e#4289#4597#0" expanded="false" />
-            <element signature="e#4644#4818#0" expanded="false" />
-            <element signature="e#4870#5111#0" expanded="false" />
-            <element signature="e#5220#5276#0" expanded="false" />
-            <element signature="e#5856#6440#0" expanded="false" />
-            <marker date="1399909894602" expanded="true" signature="546:1231" placeholder="..." />
-            <marker date="1399909894602" expanded="true" signature="1581:1766" placeholder="..." />
+            <element signature="e#1586#1769#0" expanded="false" />
+            <element signature="e#1833#1914#0" expanded="false" />
+            <element signature="e#1998#2543#0" expanded="false" />
+            <element signature="e#2651#3602#0" expanded="false" />
+            <element signature="e#3734#3941#0" expanded="false" />
+            <element signature="e#3972#4121#0" expanded="false" />
+            <element signature="e#4161#4189#0" expanded="false" />
+            <element signature="e#4292#4600#0" expanded="false" />
+            <element signature="e#4647#4821#0" expanded="false" />
+            <element signature="e#4873#5114#0" expanded="false" />
+            <element signature="e#5223#5279#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/working.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="434" selection-end="961" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
+        <state line="84" column="24" selection-start="2780" selection-end="2780" vertical-scroll-proportion="0.7493858" vertical-offset="562" max-vertical-offset="969">
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runNwrite.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="11" selection-start="369" selection-end="369" vertical-scroll-proportion="0.41608876" vertical-offset="0" max-vertical-offset="1185">
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#1206#1262#0" expanded="false" />
+            <element signature="e#1394#1617#0" expanded="false" />
+            <element signature="e#1753#2001#0" expanded="false" />
+            <element signature="e#2108#2530#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -89,18 +89,16 @@ def radius(d, n):
 # pV estimate
 def pV(M, d, mu, sigma, rho, region, regionNumber, nu, omega):
     k = []
-    for i in range(0, M):
 
-        T = orthoT(d)
-        v = unitV(d)
-        r = radius(d, v.shape[0])
+    T = orthoT(d)
+    v = unitV(d)
+    r = radius(d, v.shape[0])
+    gamma = np.linalg.cholesky(sigma(d, rho))
+    for i in range(0, M):
 
         z = []
         [z.append(np.squeeze(np.array(r[j] * np.dot(T, v[j])))) for j in range(v.shape[0])]
-
-        gamma = np.linalg.cholesky(sigma(d, rho))
         x = [mu + np.squeeze(np.array((np.dot(gamma, elem)))) for elem in z]
-
         win = 0
         for l in range(0, v.shape[0]):
             if region((math.sqrt(nu) / omega) * x[l], regionNumber):
@@ -140,11 +138,13 @@ def pVantithetic(M, d, mu, sigma, rho, region, regionNumber, nu, omega):
     return sum(k) / (2 * M * v.shape[0])
 
 def pVantitheticNew(M, d, mu, sigma, rho, region, regionNumber, nu, omega):
-    k = []
 
+    k = []
     T = orthoT(d)
     vectors = unitV(d)
     v = []
+    gamma = np.linalg.cholesky(sigma(d, rho))
+
     for vector in vectors:
         for x in vector:
             if x > 0:
@@ -154,16 +154,16 @@ def pVantitheticNew(M, d, mu, sigma, rho, region, regionNumber, nu, omega):
                 break
 
     for i in range(0, M):
-        r = radius(d, len(v))
 
+        r = radius(d, len(v))
         zPositive = []
         zNegative = []
+
         for j in range(0, len(v)):
             c = np.squeeze(np.array(r[j] * np.dot(T, v[j])))
             zPositive.append(c)
             zNegative.append(-c)
 
-        gamma = np.linalg.cholesky(sigma(d, rho))
         xPositive = [mu + np.squeeze(np.array((np.dot(gamma, elem)))) for elem in zPositive]
         xNegative = [mu + np.squeeze(np.array((np.dot(gamma, elem)))) for elem in zNegative]
 
@@ -177,11 +177,6 @@ def pVantitheticNew(M, d, mu, sigma, rho, region, regionNumber, nu, omega):
         k.append(winPositive)
         k.append(winNegative)
     return sum(k) / (2 * M * len(v))
-
-
-
-
-
 
 
 " COV MATRICES "

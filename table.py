@@ -4,7 +4,6 @@ from collections import Counter
 import re
 import pandas as pd
 import numpy as np
-from operator import truediv
 
 #true dir
 #directory = 'C:/Users/Adomas/Dropbox/Bakalaurinis/results/'
@@ -46,22 +45,3 @@ PVantithetic = np.array([np.average([np.var(pd.read_table(directory+file, header
 final_matrix = np.matrix([Crude/Antithetic, Crude/PV, Crude/PVantithetic])
 
 final_df = pd.DataFrame(final_matrix.T, columns=['Antithetic', 'pV', 'pVantithetic'], index=['O', 'E'])
-
-
-a = np.array([np.var(pd.read_table(directory+file, header=None).ix[:, 0]) for file in matched if all(comb in file for comb in combCrude[0])])
-b = np.array([np.var(pd.read_table(directory+file, header=None).ix[:, 0]) for file in matched if all(comb in file for comb in combAntithetic[0])])
-c = np.array([np.var(pd.read_table(directory+file, header=None).ix[:, 0]) for file in matched if all(comb in file for comb in combPV[0])])
-d = np.array([np.var(pd.read_table(directory+file, header=None).ix[:, 0]) for file in matched if all(comb in file for comb in combPVantithetic[0])])
-
-a/b
-a/c
-a/d
-
-a1 = np.array([np.var(pd.read_table(directory+file, header=None).ix[:, 0]) for file in matched if all(comb in file for comb in combCrude[1])])
-b1 = np.array([np.var(pd.read_table(directory+file, header=None).ix[:, 0]) for file in matched if all(comb in file for comb in combAntithetic[1])])
-c1 = np.array([np.var(pd.read_table(directory+file, header=None).ix[:, 0]) for file in matched if all(comb in file for comb in combPV[1])])
-d1 = np.array([np.var(pd.read_table(directory+file, header=None).ix[:, 0]) for file in matched if all(comb in file for comb in combPVantithetic[1])])
-
-a1/b1
-a1/c1
-a1/d1

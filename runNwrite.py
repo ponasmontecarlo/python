@@ -13,14 +13,14 @@ from scipy import integrate
 
 #### PARAMETERS ####
 # parinkti parametrus
-nu = 5
+nu = 2
 M = 500
 rho = 0.1
 sigma = identity
-estimate = pV
-region = orthant
-regionNumber = 1
-simulations = 500
+estimate = pVantithetic
+region = elipsoid
+regionNumber = 2
+simulations = 50
 criteria = 0.0001
 initStep = 0.3
 
@@ -28,20 +28,38 @@ initStep = 0.3
 dropboxDestination = 'C:/Users/Adomas/Dropbox/Bakalaurinis/results/' # cia nurodot savo dropboxo results folderi
 
 # SHOULD BE CHECKED BY PERSON
-lower = determineLowerBound(nu, criteria)
-upper = determineUpperBound(nu, lower, criteria)
-step = determineStep(nu, lower, upper, initStep, criteria)
+# lower = determineLowerBound(nu, criteria)
+# upper = determineUpperBound(nu, lower, criteria)
+# step = determineStep(nu, lower, upper, initStep, criteria)
+#
+# print('Lower bound:', lower)
+# print('Upper bound:', upper)
+# print('Step size:', step)
 
-print('Lower bound:', lower)
-print('Upper bound:', upper)
-print('Step size:', step)
 
-# first
+# lower = 0.1
+# upper = 5.4
+# step = 0.15
+
+# nu = 0.5
+# lower=0.001
+# upper=3.801
+# step = 0.11875
+
+# nu = 2
+lower = 0.015
+upper = 4.315
+step = 0.2
+
+
+
+#second
 
 d = 2
 mu = [0, 0]
 
 fileName = "%s_dim%s_df%s_%s_%s%s" % (estimate.__name__, d, nu, sigma.__name__, region.__name__, regionNumber)
+print(fileName)
 resultsFile = open(str(dropboxDestination)+str(fileName)+'.txt', 'a')
 
 for _ in itertools.repeat(None, simulations):
@@ -49,17 +67,19 @@ for _ in itertools.repeat(None, simulations):
     resultsFile.write("%s\n" % str(estimated))
 
 resultsFile.close()
+###
 
-# second
-
-d = 3
-mu = [0, 0, 0]
-
-fileName = "%s_dim%s_df%s_%s_%s%s" % (estimate.__name__, d, nu, sigma.__name__, region.__name__, regionNumber)
-resultsFile = open(str(dropboxDestination)+str(fileName)+'.txt', 'a')
-
-for _ in itertools.repeat(None, simulations):
-    estimated = studentProb(lower, upper, step, nu, M, estimate, d, mu, sigma, rho, region, regionNumber)
-    resultsFile.write("%s\n" % str(estimated))
-
-resultsFile.close()
+# region = elipsoid
+# regionNumber = 2
+# d = 2
+# mu = [0, 0]
+#
+# fileName = "%s_dim%s_df%s_%s_%s%s" % (estimate.__name__, d, nu, sigma.__name__, region.__name__, regionNumber)
+# print(fileName)
+# resultsFile = open(str(dropboxDestination)+str(fileName)+'.txt', 'a')
+#
+# for _ in itertools.repeat(None, simulations):
+#     estimated = studentProb(lower, upper, step, nu, M, estimate, d, mu, sigma, rho, region, regionNumber)
+#     resultsFile.write("%s\n" % str(estimated))
+#
+# resultsFile.close()

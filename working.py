@@ -66,3 +66,4 @@ print('Estimate time of 500 simulations = ', 500*elapsed/3600, 'hours')
 # print('Upper:', upper)
 # step = determineStep(nu, lower, upper, 0.5, criteria)
 # print('Step size:', step)
+

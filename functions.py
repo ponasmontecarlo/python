@@ -13,6 +13,9 @@ from scipy.stats import chi
 import time
 from scipy.integrate import quad
 from scipy import integrate
+import matplotlib
+
+
 
 " ESTIMATORS "
 
@@ -135,6 +138,50 @@ def pVantithetic(M, d, mu, sigma, rho, region, regionNumber, nu, omega):
         k.append(winPositive)
         k.append(winNegative)
     return sum(k) / (2 * M * v.shape[0])
+
+def pVantitheticNew(M, d, mu, sigma, rho, region, regionNumber, nu, omega):
+    k = []
+
+    T = orthoT(d)
+    vectors = unitV(d)
+    v = []
+    for vector in vectors:
+        for x in vector:
+            if x > 0:
+                v.append(vector)
+                break
+            elif x < 0:
+                break
+
+    for i in range(0, M):
+        r = radius(d, len(v))
+
+        zPositive = []
+        zNegative = []
+        for j in range(0, len(v)):
+            c = np.squeeze(np.array(r[j] * np.dot(T, v[j])))
+            zPositive.append(c)
+            zNegative.append(-c)
+
+        gamma = np.linalg.cholesky(sigma(d, rho))
+        xPositive = [mu + np.squeeze(np.array((np.dot(gamma, elem)))) for elem in zPositive]
+        xNegative = [mu + np.squeeze(np.array((np.dot(gamma, elem)))) for elem in zNegative]
+
+        winPositive = 0
+        winNegative = 0
+        for l in range(0, len(v)):
+            if region((math.sqrt(nu) / omega) * xPositive[l], regionNumber):
+                winPositive += 1
+            if region((math.sqrt(nu) / omega) * xNegative[l], regionNumber):
+                winNegative += 1
+        k.append(winPositive)
+        k.append(winNegative)
+    return sum(k) / (2 * M * len(v))
+
+
+
+
+
 
 
 " COV MATRICES "
@@ -292,3 +339,4 @@ def studentProb(lower, upper, step, nu, M, estimate, d, mu, sigma, rho, region, 
     multiplier = (2 ** (1 - (nu / 2))) / (math.gamma(nu / 2))
 
     return multiplier * approx
+

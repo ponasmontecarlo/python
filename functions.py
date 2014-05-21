@@ -88,13 +88,15 @@ def radius(d, n):
 
 # pV estimate
 def pV(M, d, mu, sigma, rho, region, regionNumber, nu, omega):
-    k = []
 
-    T = orthoT(d)
+    k = []
     v = unitV(d)
-    r = radius(d, v.shape[0])
+
     gamma = np.linalg.cholesky(sigma(d, rho))
+
     for i in range(0, M):
+        T = orthoT(d)
+        r = radius(d, v.shape[0])
 
         z = []
         [z.append(np.squeeze(np.array(r[j] * np.dot(T, v[j])))) for j in range(v.shape[0])]
@@ -105,7 +107,6 @@ def pV(M, d, mu, sigma, rho, region, regionNumber, nu, omega):
                 win += 1
         k.append(win)
     return sum(k) / (M * v.shape[0])
-
 
 # pV w/ antithetic variates
 def pVantithetic(M, d, mu, sigma, rho, region, regionNumber, nu, omega):
@@ -140,7 +141,7 @@ def pVantithetic(M, d, mu, sigma, rho, region, regionNumber, nu, omega):
 def pVantitheticNew(M, d, mu, sigma, rho, region, regionNumber, nu, omega):
 
     k = []
-    T = orthoT(d)
+
     vectors = unitV(d)
     v = []
     gamma = np.linalg.cholesky(sigma(d, rho))
@@ -154,7 +155,7 @@ def pVantitheticNew(M, d, mu, sigma, rho, region, regionNumber, nu, omega):
                 break
 
     for i in range(0, M):
-
+        T = orthoT(d)
         r = radius(d, len(v))
         zPositive = []
         zNegative = []

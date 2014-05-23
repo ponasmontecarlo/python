@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68c6cc06-25a1-4d0d-ac51-097643de2fb6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/creating.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/varianceInvestigation.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.py" afterPath="$PROJECT_DIR$/functions.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runNwrite.py" afterPath="$PROJECT_DIR$/runNwrite.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/table.py" afterPath="$PROJECT_DIR$/table.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/time.py" afterPath="$PROJECT_DIR$/time.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/working.py" afterPath="$PROJECT_DIR$/working.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MCintegration.iws" />
@@ -32,19 +26,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="simulations.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simulations.py">
+      <file leaf-file-name="working.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/working.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="36" selection-start="1223" selection-end="1234" vertical-scroll-proportion="0.0" vertical-offset="634" max-vertical-offset="1003">
+            <state line="84" column="0" selection-start="2514" selection-end="2514" vertical-scroll-proportion="0.0" vertical-offset="815" max-vertical-offset="1445">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="functions.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="199" column="30" selection-start="5883" selection-end="5883" vertical-scroll-proportion="0.0" vertical-offset="704" max-vertical-offset="2176">
+            <state line="225" column="0" selection-start="6408" selection-end="6408" vertical-scroll-proportion="0.2583519" vertical-offset="853" max-vertical-offset="2176">
               <folding>
                 <element signature="e#493#672#0" expanded="false" />
                 <element signature="e#815#1509#0" expanded="false" />
@@ -72,23 +66,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="working.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/working.py">
+      <file leaf-file-name="table.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/table.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="0" selection-start="2514" selection-end="2514" vertical-scroll-proportion="0.0" vertical-offset="1216" max-vertical-offset="1598">
+            <state line="11" column="0" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="935">
               <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="runNwrite.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/runNwrite.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="0" selection-start="933" selection-end="986" vertical-scroll-proportion="0.0" vertical-offset="1930" max-vertical-offset="3179">
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
+                <element signature="e#0#22#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,19 +80,26 @@
       <file leaf-file-name="time.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/time.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="0" selection-start="1663" selection-end="1663" vertical-scroll-proportion="0.0" vertical-offset="536" max-vertical-offset="1683">
+            <state line="47" column="0" selection-start="1663" selection-end="1663" vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="1683">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="table.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/table.py">
+      <file leaf-file-name="runNwrite.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/runNwrite.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0" vertical-offset="556" max-vertical-offset="935">
-              <folding>
-                <element signature="e#0#22#0" expanded="true" />
-              </folding>
+            <state line="117" column="0" selection-start="2304" selection-end="2356" vertical-scroll-proportion="0.0" vertical-offset="1659" max-vertical-offset="3179">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="varianceInvestigation.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/varianceInvestigation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="0" selection-start="996" selection-end="1323" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1275">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -117,21 +107,8 @@
       <file leaf-file-name="creating.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/creating.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="60" selection-start="1103" selection-end="1128" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1258">
-              <folding>
-                <element signature="e#0#22#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="varianceInvestigation.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/varianceInvestigation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="996" selection-end="1323" vertical-scroll-proportion="0.60850114" vertical-offset="306" max-vertical-offset="1377">
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
+            <state line="37" column="60" selection-start="1103" selection-end="1128" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="1173">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -161,11 +138,11 @@
         <option value="$PROJECT_DIR$/pythonMC/runSimulation.py" />
         <option value="$PROJECT_DIR$/time.py" />
         <option value="$PROJECT_DIR$/table.py" />
-        <option value="$PROJECT_DIR$/runNwrite.py" />
         <option value="$PROJECT_DIR$/working.py" />
         <option value="$PROJECT_DIR$/functions.py" />
         <option value="$PROJECT_DIR$/creating.py" />
         <option value="$PROJECT_DIR$/varianceInvestigation.py" />
+        <option value="$PROJECT_DIR$/runNwrite.py" />
       </list>
     </option>
   </component>
@@ -258,7 +235,7 @@
       </console-settings>
     </option>
   </component>
-  <component name="RunManager" selected="Python.varianceInvestigation">
+  <component name="RunManager" selected="Python.runNwrite">
     <configuration default="false" name="runNwrite" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -479,9 +456,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.varianceInvestigation" />
-        <item index="1" class="java.lang.String" itemvalue="Python.creating" />
-        <item index="2" class="java.lang.String" itemvalue="Python.runNwrite" />
+        <item index="0" class="java.lang.String" itemvalue="Python.runNwrite" />
+        <item index="1" class="java.lang.String" itemvalue="Python.varianceInvestigation" />
+        <item index="2" class="java.lang.String" itemvalue="Python.creating" />
         <item index="3" class="java.lang.String" itemvalue="Python.table" />
         <item index="4" class="java.lang.String" itemvalue="Python.time" />
       </list>
@@ -591,7 +568,11 @@
       <created>1400693021328</created>
       <updated>1400693021328</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="pataisyta">
+      <created>1400872023276</created>
+      <updated>1400872023276</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -622,11 +603,11 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.325" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10911925" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.07950117" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.07950117" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39908257" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3058104" sideWeight="0.5003897" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2767584" sideWeight="0.49961028" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27591464" sideWeight="0.49961028" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -691,11 +672,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/working.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="272">
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="14" column="0" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="272" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/normalTest.py">
@@ -710,11 +687,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/working.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="29" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="51" column="29" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/normalTest.py">
@@ -729,11 +702,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/working.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="29" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="595">
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="51" column="29" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="595" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/normalUniFunc.py">
@@ -918,23 +887,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/simulations.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="36" selection-start="1223" selection-end="1234" vertical-scroll-proportion="0.0" vertical-offset="362" max-vertical-offset="885">
-          <folding />
-        </state>
+        <state line="40" column="36" selection-start="1223" selection-end="1234" vertical-scroll-proportion="0.0" vertical-offset="362" max-vertical-offset="885" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/working.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="0" selection-start="2514" selection-end="2514" vertical-scroll-proportion="0.0" vertical-offset="1216" max-vertical-offset="1598">
+        <state line="84" column="0" selection-start="2514" selection-end="2514" vertical-scroll-proportion="0.0" vertical-offset="815" max-vertical-offset="1445">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/table.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0" vertical-offset="556" max-vertical-offset="935">
           <folding>
-            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#0#22#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/varianceInvestigation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="0" selection-start="996" selection-end="1323" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/creating.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="60" selection-start="1103" selection-end="1128" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="1173">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/time.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="0" selection-start="1663" selection-end="1663" vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="1683">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runNwrite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="0" selection-start="2304" selection-end="2356" vertical-scroll-proportion="0.0" vertical-offset="1659" max-vertical-offset="3179">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="199" column="30" selection-start="5883" selection-end="5883" vertical-scroll-proportion="0.0" vertical-offset="704" max-vertical-offset="2176">
+        <state line="225" column="0" selection-start="6408" selection-end="6408" vertical-scroll-proportion="0.2583519" vertical-offset="853" max-vertical-offset="2176">
           <folding>
             <element signature="e#493#672#0" expanded="false" />
             <element signature="e#815#1509#0" expanded="false" />
@@ -957,49 +959,6 @@
             <element signature="e#8541#8963#0" expanded="false" />
             <element signature="e#9546#10149#0" expanded="false" />
             <element signature="e#10265#10754#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runNwrite.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="933" selection-end="986" vertical-scroll-proportion="0.0" vertical-offset="1930" max-vertical-offset="3179">
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/table.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0" vertical-offset="556" max-vertical-offset="935">
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/time.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="1663" selection-end="1663" vertical-scroll-proportion="0.0" vertical-offset="587" max-vertical-offset="1734">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/creating.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="60" selection-start="1103" selection-end="1128" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1258">
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/varianceInvestigation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="996" selection-end="1323" vertical-scroll-proportion="0.60850114" vertical-offset="306" max-vertical-offset="1377">
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>

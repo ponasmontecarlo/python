@@ -80,7 +80,7 @@ print(df)
 print(df.to_latex())
 
 m = np.matrix([[0.450, 0.458, 0.451], [1.286, 1.367, 1.327], [25.074, 30.041, 57.134], [27.479, 38.159, 79.667]])
-d = pd.DataFrame((8000/3600)*m.T,columns=['Crude', 'Antithetic', 'pV', 'pVantithetic'], index=['2', '3', '5'])
+d = pd.DataFrame((8000/3600)*m.T, columns=['Crude', 'Antithetic', 'pV', 'pVantithetic'], index=['2', '3', '5'])
 
 
 pvantinew = []

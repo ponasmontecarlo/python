@@ -179,6 +179,25 @@ def pVantitheticNew(M, d, mu, sigma, rho, region, regionNumber, nu, omega):
         k.append(winNegative)
     return sum(k) / (2 * M * len(v))
 
+def pStar(M, d, mu, sigma, rho, region, regionNumber, nu, omega):
+    gamma = sigma(d, rho)
+    if region == elipsoid:
+        win = []
+        for i in range(M):
+            T = orthoT(d)
+            v = unitV(d)
+            inRegion = [2*(math.sqrt(nu)/omega)*np.dot(T, vector).item(0) for vector in v if np.dot(T, vector).item(0) >= 0]
+            win.append(sum([chi.cdf(value, d) for value in inRegion]))
+    else:
+        win = [0]
+        for i in range(M):
+            T = orthoT(d)
+            v = unitV(d)
+            Tv = [np.dot(T, vector) for vector in v]
+            for vector in Tv:
+                if (np.array(np.dot(vector, gamma) * (math.sqrt(nu) / omega)) <= 0).all():
+                    win.append(1)
+    return sum(win)/(M*len(v))
 
 " COV MATRICES "
 

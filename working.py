@@ -67,3 +67,22 @@ print('Estimate time of 500 simulations = ', 500*elapsed/3600, 'hours')
 # step = determineStep(nu, lower, upper, 0.5, criteria)
 # print('Step size:', step)
 
+################################################
+
+
+
+simulations = 10
+nu = 2
+lower = 0.015
+upper = 4.315
+step = 0.2
+estimated = []
+mu = [0,0]
+for _ in itertools.repeat(None, simulations):
+    print(studentProb(lower, upper, step, nu, M, pStar, d, mu, sigma, rho, orthant, regionNumber))
+
+
+
+
+studentProb(lower, upper, step, nu, M, pStar, d, mu, oneFactor, rho, orthant, regionNumber)
+
